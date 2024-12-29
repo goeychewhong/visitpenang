@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import video1 from '../assets/video1.mp4';
 import '../styles/Home.css'; // Import the new Home.css file
-import foodicon from '../assets/foodicon.jpg';
-import touristicon from '../assets/touristspot.png';
+import foodicon from '../assets/foodicon.svg';
+import touristicon from '../assets/touristspot.svg';
 import accomodationicon from '../assets/accomodation.svg';
 import Card from '../components/card';
 import image1 from '../assets/image1.jpg';
@@ -38,32 +38,32 @@ function HomePage() {
                 </video>
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-                    <h1 className="text-5xl font-extrabold mb-4">Welcome to Penang</h1>
-                    <p className="text-lg">Discover the best places to visit, eat, and stay in Penang.</p>
-                </div>
-                <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent"></div>
-            </div>
-            <div className="relative w-full bg-orange-50 shadow-lg rounded-lg p-6 mt-[-32px] z-20">
-                <div className="flex flex-col gap-4">
-                    <div className="bg-orange-50 p-4 rounded-lg shadow-sm">
-                        <h2 className="text-5xl font-bold mb-2 text-black">Top Categories</h2>
+                    <h1 className="text-8xl font-extrabold mb-4">Welcome to Penang</h1>
+                    <p className="text-4xl mb-12">Discover the best places to visit, eat, and stay in Penang.</p>
+                    <div className="p-7 rounded-3xl mx-4">
+                        <h2 className="text-5xl font-bold mb-2 text-white">Top Categories</h2>
                         <div className="flex justify-center gap-80 mt-4">
                             <Link to="/food-and-beverages">
-                                <img src={foodicon} alt="f&b" className="w-20 h-20 object-contain bg-orange-50" />
+                                <img src={foodicon} alt="f&b" className="w-20 h-20 rounded-3xl icon" />
                             </Link>
-                            <Link to="/accommodations" >
-                                <img src={accomodationicon} alt="accomodationicon" className="w-20 h-20 object-fill rounded-full bg-orange-50" />
+                            <Link to="/accommodations">
+                                <img src={accomodationicon} alt="accomodationicon" className="w-20 h-20 rounded-full icon" />
                             </Link>
                             <Link to="/tourist-spots">
-                                <img src={touristicon} alt="tourist" className="w-20 h-20 object-cover rounded-full bg-orange-50" />
+                                <img src={touristicon} alt="tourist" className="w-20 h-20 rounded-full icon" />
                             </Link>
                         </div>
                     </div>
                 </div>
+                <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent"></div>
+            </div>
+            <div className="relative w-full bg-orange-50 shadow-lg rounded-lg p-6 mt-[-32px] z-20">
                 <div className="home-container">
-                    <div className="section bg-orange-50 p-4 rounded-lg shadow-sm text-left">
-                        <h2 className="text-3xl font-bold mb-2 text-black">Foods</h2>
-                        <p className="text-black">Indulge in the diverse and delicious food scene, from street food to fine dining.</p>
+                    <div className="flex flex-col gap-4">
+                    </div>
+                    <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left">
+                        <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-black">Foods</h2>
+                        <p className="text-black pl-6 text-xl">Indulge in the diverse and delicious food scene, from street food to fine dining.</p>
                         <div className="relative">
                             <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef1)}>&lt;</button>
                             <div className="flowpane" ref={flowpaneRef1}>
@@ -102,9 +102,9 @@ function HomePage() {
                             <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef1)}>&gt;</button>
                         </div>
                     </div>
-                    <div className="section bg-orange-50 p-4 rounded-lg shadow-sm text-left">
-                        <h2 className="text-3xl font-bold mb-2 text-black">Accommodations</h2>
-                        <p className="text-black">Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses.</p>
+                    <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left">
+                        <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-black">Accommodations</h2>
+                        <p className="text-black pl-6 text-xl">Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses.</p>
                         <div className="relative">
                             <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef2)}>&lt;</button>
                             <div className="flowpane" ref={flowpaneRef2}>
@@ -128,9 +128,9 @@ function HomePage() {
                             <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef2)}>&gt;</button>
                         </div>
                     </div>
-                    <div className="section bg-orange-50 p-4 rounded-lg shadow-sm text-left">
-                        <h2 className="text-3xl font-bold mb-2 text-black">Tourism</h2>
-                        <p className="text-black">Indulge in the diverse and delicious food scene, from street food to fine dining.</p>
+                    <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left">
+                        <h2 className="text-3xl font-bold mb-2 text-black pt-6 pl-6">Tourism</h2>
+                        <p className="text-black pl-6 text-xl">Indulge in the diverse and delicious food scene, from street food to fine dining.</p>
                         <div className="relative">
                             <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef3)}>&lt;</button>
                             <div className="flowpane" ref={flowpaneRef3}>

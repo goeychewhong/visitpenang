@@ -11,7 +11,7 @@ function Card({ imageSrc, imageName, imageDescription }) {
             onMouseLeave={() => setIsHovered(false)}
         >
             <div className="card-image" style={{ backgroundImage: `url(${imageSrc})` }}>
-                <h2 className={`card-title ${isHovered ? 'hovered' : ''}` }>{imageName}</h2>
+                <h2 className={`card-title ${isHovered ? 'hovered' : ''}`}>{imageName}</h2>
                 {isHovered && (
                     <p className="card-description">
                         {imageDescription}

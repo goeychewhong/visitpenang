@@ -11,7 +11,7 @@
 
 .card:hover {
   transition: transform 0.15s;
-  transform: scale(1.15); /* Maintain size when hovered */
+  transform: scale(1.1); /* Maintain size when hovered */
 }
 
 .card-image {
