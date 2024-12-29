@@ -42,15 +42,15 @@ function App() {
             <p className="footer-text">
               Visit Penang is your ultimate guide to exploring the beautiful island of Penang. Discover the best tourist spots, food and beverages, and accommodations to make your trip unforgettable.
             </p>
-          </div>
-          <div className="footer-links">
-            <h2 className="footer-title">Quick Links</h2>
+            <h2 className="footer-title text-black text-end">Quick Links</h2>
             <nav className="footer-nav">
               <Link to="/">Home</Link>
               <Link to="/tourist-spots">Tourist</Link>
               <Link to="/food-and-beverages">Food and Beverages</Link>
               <Link to="/accommodations">Accommodations</Link>
             </nav>
+          </div>
+          <div className="footer-links">
           </div>
         </div>
       </footer>

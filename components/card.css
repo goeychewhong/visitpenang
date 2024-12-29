@@ -33,7 +33,7 @@
   border-radius: 0px 0px 15px 15px; /* Add border radius */
   margin: 0;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3); /* Black background with transparency */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Fix gradient */
   padding: 10px;
   transition: top 0.3s; /* Smooth transition */
 }
@@ -45,20 +45,19 @@
 }
 
 .card-description {
-border-radius: 0px 0px 15px 15px; /* Add border radius */
+  border-radius: 0px 0px 15px 15px; /* Add border radius */
   position: absolute;
   bottom: 0;
   width: 100%;
   font-size: 1.2em;
   color: white;
-  background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
-  padding: 0; /* Remove padding */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Fix gradient */
+  padding: 10px; /* Add padding */
   text-align: center;
   margin: 0; /* Remove margin */
-  transition: 5; /* Smooth transition */
+  transition: bottom 0.3s; /* Smooth transition */
 }
 
 .card.hovered .card-description {
-  transition: 100s;
   bottom: 0; /* Stick description to the bottom */
 }
