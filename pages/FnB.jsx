@@ -5,6 +5,22 @@ import foodImage2 from '../assets/food2.jpg';
 import foodImage3 from '../assets/food3.jpg';
 import foodImage4 from '../assets/food4.jpg'; 
 import foodImage5 from '../assets/food5.jpg';
+import foodImage6 from '../assets/food6.jpg';
+import drinkImage1 from '../assets/drink1.jpg';
+import drinkImage2 from '../assets/drink2.jpg';
+import drinkImage3 from '../assets/drink3.jpg';
+import drinkImage4 from '../assets/drink4.jpg'; 
+import drinkImage5 from '../assets/drink5.jpg';
+import drinkImage6 from '../assets/drink6.jpg';
+import dessertImage1 from '../assets/dessert1.jpg';
+import dessertImage2 from '../assets/dessert2.jpg';
+import dessertImage3 from '../assets/dessert3.jpg';
+import dessertImage4 from '../assets/dessert4.jpg'; 
+import dessertImage5 from '../assets/dessert5.jpg';
+import dessertImage6 from '../assets/dessert6.jpg';
+import hawkerImage1 from '../assets/hawker1.jpg'; 
+import hawkerImage2 from '../assets/hawker2.jpg';
+import hawkerImage3 from '../assets/hawker3.jpg';
 import bannerVideo from '../assets/banner.mp4'; // Import the banner video
 import StarRating from '../components/StarRating'; // Import the StarRating component
 
@@ -36,9 +52,9 @@ function FnBPage() {
         <p className="text-3xl text-gray-800 mb-8 text-center font-mountainsChristmas">
           Penang is a food lover’s paradise, offering a rich blend of flavors from its diverse cultures. The island’s culinary scene is a vibrant mix of unique dishes that reflect its Malay, Chinese, and Indian influences, making it a must-visit destination for food enthusiasts.
         </p>
-        <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left">
-          <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-black">Foods</h2>
-          <p className="text-black pl-6 text-xl">Indulge in the diverse and delicious food scene, from street food to fine dining.</p>
+        <div className="section bg-orange-200 p-4 rounded-2xl shadow-2xl text-left">
+          <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-yellow-900">Foods</h2>
+          <p className="text-yellow-900 pl-6 text-xl">Indulge in the diverse and delicious food scene, from street food to fine dining.</p>
           <div className="relative">
             <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef1)}>&lt;</button>
             <div className="flowpane" ref={flowpaneRef1}>
@@ -48,7 +64,7 @@ function FnBPage() {
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Curry Noodle</span>
+                  <span className="text-xl font-bold text-yellow-100 text-center block">Curry Noodle</span>
                   <div className="flex justify-center">
                     <StarRating rating={4} /> {/* Add star rating */}
                   </div>
@@ -63,7 +79,7 @@ function FnBPage() {
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-100 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-900">Char Kuey Teow</span>
+                  <span className="text-xl font-bold text-yellow-900 text-center block">Char Kuey Teow</span>
                   <div className="flex justify-center">
                     <StarRating rating={5} /> {/* Add star rating */}
                   </div>
@@ -78,57 +94,57 @@ function FnBPage() {
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Cendol</span>
+                  <span className="text-xl font-bold text-yellow-100 text-center block">Nasi Kandar</span>
                   <div className="flex justify-center">
                     <StarRating rating={4} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-white">
-                    Cendol is a refreshing Malaysian dessert made of shaved ice, pandan-flavored green jelly, coconut milk, and gula melaka which is a palm sugar syrup.
-                  </p>
-                </div>
-              </Link>
-              <Link to="/food-posts/4" className="block">
-                <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage1} alt="Food 4" className="w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-black opacity-25"></div>
-                </div>
-                <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Curry Noodle</span>
-                  <div className="flex justify-center">
-                    <StarRating rating={4} /> {/* Add star rating */}
-                  </div>
-                  <p className="text-sm mt-6 text-white">
-                    Penang curry noodles are a spicy, coconut-based noodle soup topped with prawns, cockles, tofu puffs, and sambal, offering a rich and flavorful taste.
+                    Steamed rice served with a variety of flavorful curries, meats, and vegetables. A signature Malaysian-Indian fusion meal.
                   </p>
                 </div>
               </Link>
               <Link to="/food-posts/5" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage2} alt="Food 5" className="w-full h-full object-cover" />
+                  <img src={foodImage4} alt="Food 5" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-100 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-900">Char Kuey Teow</span>
+                  <span className="text-xl font-bold text-yellow-900 text-center block">Hokkien Mee</span>
                   <div className="flex justify-center">
                     <StarRating rating={5} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-black ">
-                    Char Kuey Teow is a smoky, stir-fried flat rice noodle dish from Penang, cooked with prawns, cockles, egg, bean sprouts, and Chinese chives in a savory soy sauce.
+                    A prawn noodle soup with a rich broth made from prawns and pork ribs, served with egg noodles, seafood, and sambal.
                   </p>
                 </div>
               </Link>
               <Link to="/food-posts/6" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage3} alt="Food 6" className="w-full h-full object-cover" />
+                  <img src={foodImage5} alt="Food 6" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Cendol</span>
+                  <span className="text-xl font-bold text-yellow-100 text-center block">Oyster Omelette</span>
                   <div className="flex justify-center">
                     <StarRating rating={4} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-white">
-                    Cendol is a refreshing Malaysian dessert made of shaved ice, pandan-flavored green jelly, coconut milk, and gula melaka which is a palm sugar syrup.
+                    Also known as Orh Jian, it is a crispy and savory omelet cooked with plump oysters, eggs, and starch for a chewy texture.
+                  </p>
+                </div>
+              </Link>
+              <Link to="/food-posts/5" className="block">
+                <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
+                  <img src={foodImage6} alt="Food 5" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-black opacity-25"></div>
+                </div>
+                <div className="bg-yellow-100 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
+                  <span className="text-xl font-bold text-yellow-900 text-center block">Asam Laksa</span>
+                  <div className="flex justify-center">
+                    <StarRating rating={5} /> {/* Add star rating */}
+                  </div>
+                  <p className="text-sm mt-6 text-black ">
+                    A tangy and spicy noodle soup, it features thick rice noodles in a flavorful tamarind-based broth. The bold, sour, and slightly spicy taste makes it a beloved dish in Penang
                   </p>
                 </div>
               </Link>
@@ -137,99 +153,99 @@ function FnBPage() {
             <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef1)}>&gt;</button>
           </div>
         </div>
-        <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left">
-          <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-black">Desserts</h2>
-          <p className="text-black pl-6 text-xl">Explore more delicious dessert options in Penang.</p>
+        <div className="section bg-yellow-800 p-4 rounded-2xl shadow-2xl text-left">
+          <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-yellow-100">Desserts</h2>
+          <p className="text-yellow-100 pl-6 text-xl">Explore more delicious dessert options in Penang.</p>
           <div className="relative">
             <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef2)}>&lt;</button>
             <div className="flowpane" ref={flowpaneRef2}>
               <Link to="/food-posts/7" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage4} alt="Food 7" className="w-full h-full object-cover" />
+                  <img src={dessertImage1} alt="Food 7" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Laksa</span>
+                  <span className="text-xl font-bold text-yellow-100 text-center block">Cendol</span>
                   <div className="flex justify-center">
                     <StarRating rating={4} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-white">
-                    Laksa is a spicy noodle soup with a rich, flavorful broth made from fish, tamarind, and spices, topped with fresh herbs and vegetables.
+                    Cendol is a refreshing Malaysian dessert drink made of shaved ice, pandan-flavored green jelly, coconut milk, and gula melaka.
                   </p>
                 </div>
               </Link>
               <Link to="/food-posts/8" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage5} alt="Food 8" className="w-full h-full object-cover" />
+                  <img src={dessertImage2} alt="Food 8" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-100 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-900">Hokkien Mee</span>
+                  <span className="text-xl font-bold text-yellow-900 text-center block">Ais Kacang</span>
                   <div className="flex justify-center">
                     <StarRating rating={5} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-black ">
-                    Hokkien Mee is a flavorful noodle dish made with a rich prawn broth, served with prawns, pork, egg, and bean sprouts.
+                    A colorful mix of shaved ice, jelly, red beans, sweet corn, and syrup, often topped with ice cream or peanuts.
                   </p>
                 </div>
               </Link>
               <Link to="/food-posts/9" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage3} alt="Food 9" className="w-full h-full object-cover" />
+                  <img src={dessertImage3} alt="Food 9" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Nasi Kandar</span>
+                  <span className="text-xl font-bold text-yellow-100 text-center block">Bubur Cha Cha</span>
                   <div className="flex justify-center">
                     <StarRating rating={4} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-white">
-                    Nasi Kandar is a popular Malaysian dish consisting of steamed rice served with a variety of curries and side dishes.
+                    A popular Malaysian dessert made with coconut milk, sweet potato, yam, and sago pearls. It's a warm, comforting treat with a mix of textures and natural sweetness.
                   </p>
                 </div>
               </Link>
-              <Link to="/food-posts/10" className="block">
+              <Link to="/food-posts/8" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage4} alt="Food 10" className="w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-black opacity-25"></div>
-                </div>
-                <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Laksa</span>
-                  <div className="flex justify-center">
-                    <StarRating rating={4} /> {/* Add star rating */}
-                  </div>
-                  <p className="text-sm mt-6 text-white">
-                    Laksa is a spicy noodle soup with a rich, flavorful broth made from fish, tamarind, and spices, topped with fresh herbs and vegetables.
-                  </p>
-                </div>
-              </Link>
-              <Link to="/food-posts/11" className="block">
-                <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage5} alt="Food 11" className="w-full h-full object-cover" />
+                  <img src={dessertImage4} alt="Food 8" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-100 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-900">Hokkien Mee</span>
+                  <span className="text-xl font-bold text-yellow-900 text-center block">Tong Sui</span>
                   <div className="flex justify-center">
                     <StarRating rating={5} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-black ">
-                    Hokkien Mee is a flavorful noodle dish made with a rich prawn broth, served with prawns, pork, egg, and bean sprouts.
+                    A traditional Chinese dessert often served warm or chilled. It consists of a variety of sweet ingredients like black sesame, red beans, lotus seeds, or mung beans, flavored with rock sugar.
                   </p>
                 </div>
               </Link>
               <Link to="/food-posts/12" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage3} alt="Food 12" className="w-full h-full object-cover" />
+                  <img src={dessertImage5} alt="Food 12" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Nasi Kandar</span>
+                  <span className="text-xl font-bold text-yellow-100 text-center block">Tau Hua</span>
                   <div className="flex justify-center">
                     <StarRating rating={4} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-white">
-                    Nasi Kandar is a popular Malaysian dish consisting of steamed rice served with a variety of curries and side dishes.
+                  A silky smooth tofu pudding served with sweet syrup, often flavored with gula melaka or simple sugar syrup. This dessert is popular in Penang and can be served warm or cold.
+                  </p>
+                </div>
+              </Link>
+              <Link to="/food-posts/8" className="block">
+                <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
+                  <img src={dessertImage6} alt="Food 8" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-black opacity-25"></div>
+                </div>
+                <div className="bg-yellow-100 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
+                  <span className="text-xl font-bold text-yellow-900 text-center block">Rojak</span>
+                  <div className="flex justify-center">
+                    <StarRating rating={5} /> {/* Add star rating */}
+                  </div>
+                  <p className="text-sm mt-6 text-black ">
+                    A sweet and tangy fruit and vegetable salad with a sticky shrimp paste dressing, topped with crushed peanuts.
                   </p>
                 </div>
               </Link>
@@ -238,19 +254,19 @@ function FnBPage() {
             <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef2)}>&gt;</button>
           </div>
         </div>
-        <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left">
-          <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-black">Drinks</h2>
-          <p className="text-black pl-6 text-xl">Explore a variety of refreshing drinks in Penang.</p>
+        <div className="section bg-orange-200  p-4 rounded-2xl shadow-2xl text-left">
+          <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-yellow-900">Drinks</h2>
+          <p className="text-yellow-900 pl-6 text-xl">Explore a variety of refreshing drinks in Penang.</p>
           <div className="relative">
             <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef3)}>&lt;</button>
             <div className="flowpane" ref={flowpaneRef3}>
               <Link to="/food-posts/13" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage4} alt="Drink 1" className="w-full h-full object-cover" />
+                  <img src={drinkImage1} alt="Drink 1" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Teh Tarik</span>
+                  <span className="text-xl font-bold text-yellow-100 text-center block">Teh Tarik</span>
                   <div className="flex justify-center">
                     <StarRating rating={4} /> {/* Add star rating */}
                   </div>
@@ -261,76 +277,76 @@ function FnBPage() {
               </Link>
               <Link to="/food-posts/14" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage5} alt="Drink 2" className="w-full h-full object-cover" />
+                  <img src={drinkImage2} alt="Drink 2" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-100 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-900">Cendol</span>
+                  <span className="text-xl font-bold text-yellow-900 text-center block">Teh O Ais Limau</span>
                   <div className="flex justify-center">
                     <StarRating rating={5} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-black ">
-                    Cendol is a refreshing Malaysian dessert drink made of shaved ice, pandan-flavored green jelly, coconut milk, and gula melaka.
+                  A iced drink made with black tea, a squeeze of fresh lime, and sugar. The combination of the slightly bitter tea and zesty lime creates a perfect balance , making it a popular cooling drink in the hot Malaysian weather.
                   </p>
                 </div>
               </Link>
               <Link to="/food-posts/9" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage3} alt="Drink 3" className="w-full h-full object-cover" />
+                  <img src={drinkImage3} alt="Drink 3" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Air Batu Campur</span>
+                  <span className="text-xl font-bold text-yellow-100 text-center block">Penang Black Coffee</span>
                   <div className="flex justify-center">
                     <StarRating rating={4} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-white">
-                    Air Batu Campur, also known as ABC, is a popular Malaysian dessert drink made of shaved ice, red beans, sweet corn, grass jelly, and various syrups.
-                  </p>
-                </div>
-              </Link>
-              <Link to="/food-posts/13" className="block">
-                <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage4} alt="Drink 1" className="w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-black opacity-25"></div>
-                </div>
-                <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Teh Tarik</span>
-                  <div className="flex justify-center">
-                    <StarRating rating={4} /> {/* Add star rating */}
-                  </div>
-                  <p className="text-sm mt-6 text-white">
-                    Teh Tarik is a popular Malaysian milk tea with a rich, creamy flavor, made by "pulling" the tea to create a frothy top.
+                    A strong and aromatic local coffee brewed using traditional methods. It is typically served black, with a rich, bold flavor and a smooth finish.
                   </p>
                 </div>
               </Link>
               <Link to="/food-posts/14" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage5} alt="Drink 2" className="w-full h-full object-cover" />
+                  <img src={drinkImage4} alt="Drink 2" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-100 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-900">Cendol</span>
+                  <span className="text-xl font-bold text-yellow-900 text-center block">Penang White Coffee</span>
                   <div className="flex justify-center">
                     <StarRating rating={5} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-black ">
-                    Cendol is a refreshing Malaysian dessert drink made of shaved ice, pandan-flavored green jelly, coconut milk, and gula melaka.
+                    A smooth and creamy coffee made from beans roasted at a lower temperature, giving it a milder and less bitter taste compared to traditional black coffee typically served with condensed milk,
                   </p>
                 </div>
               </Link>
               <Link to="/food-posts/9" className="block">
                 <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
-                  <img src={foodImage3} alt="Drink 3" className="w-full h-full object-cover" />
+                  <img src={drinkImage5} alt="Drink 3" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-black opacity-25"></div>
                 </div>
                 <div className="bg-yellow-900 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
-                  <span className="text-xl font-bold text-yellow-100">Air Batu Campur</span>
+                  <span className="text-xl font-bold text-yellow-100 text-center block">Sugar Cane Juice</span>
                   <div className="flex justify-center">
                     <StarRating rating={4} /> {/* Add star rating */}
                   </div>
                   <p className="text-sm mt-6 text-white">
-                    Air Batu Campur, also known as ABC, is a popular Malaysian dessert drink made of shaved ice, red beans, sweet corn, grass jelly, and various syrups.
+                    A refreshing, naturally sweet drink made by extracting juice from fresh sugar cane stalks. Often served chilled with a splash of lime or lemon
+                  </p>
+                </div>
+              </Link>
+              <Link to="/food-posts/14" className="block">
+                <div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-96">
+                  <img src={drinkImage6} alt="Drink 2" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-black opacity-25"></div>
+                </div>
+                <div className="bg-yellow-100 p-4 rounded-lg shadow-lg mt-2 w-96 h-48">
+                  <span className="text-xl font-bold text-yellow-900 text-center block">Coconut Shake</span>
+                  <div className="flex justify-center">
+                    <StarRating rating={5} /> {/* Add star rating */}
+                  </div>
+                  <p className="text-sm mt-6 text-black ">
+                    Blended coconut water, flesh, and ice, served with a scoop of ice cream for a tropical treat.
                   </p>
                 </div>
               </Link>
@@ -347,12 +363,12 @@ function FnBPage() {
           <Link to="/special-posts/1" className="block w-full md:w-3/4">
             <div className="relative overflow-hidden rounded-lg shadow-lg flex w-200 h-96">
               <div className="w-1/2 h-48 flex-shrink-0">
-                <img src={foodImage4} alt="Special Food 1" className="w-full h-81 object-cover " />
+                <img src={hawkerImage1} alt="Special Food 1" className="w-full h-81 object-cover " />
               </div>
               <div className="flex flex-col justify-center p-4 w-1/2 bg-yellow-200 ">
-                <span className="text-3xl font-bold text-amber-900 font-playfair">New Lane Hawker Center</span>
+                <span className="text-3xl font-bold text-amber-900 font-playfair">New Lane Hawker Centre</span>
                 <p className="text-sm mt-2 font-bold text-black font-merriweather">
-                  New Lane Hawker Center opens at 4 pm every day when Georgetown’s Lorong Baru closes down to vehicular traffic. Automobiles are required to find alternate routes to their destination because the street turns into a thriving outdoor hawker food center. Hawkers furiously fry up their specialties, which include char kway teow (flat rice noodles with cockles, prawns, chili and bean sprouts), and chee cheong fun (rice noodle rolls).
+                  New Lane Hawker Centre opens at 4 pm every day when Georgetown’s Lorong Baru closes down to vehicular traffic. Automobiles are required to find alternate routes to their destination because the street turns into a thriving outdoor hawker food centre. Hawkers furiously fry up their specialties, which include char kway teow (flat rice noodles with cockles, prawns, chili and bean sprouts), and chee cheong fun (rice noodle rolls).
                   <br /><br />
                   Expect to sit on colorful plastic tables and chairs on the roadside. Our favorite dish here is congee, a Chinese oatmeal made with rice instead of oats, which makes for a filling, hearty meal. Flavored with a variety of side dishes, anything from fresh crab and eggs to pork and ginger chicken, this is basically Chinese comfort food.
                   <br /><br />
@@ -366,12 +382,12 @@ function FnBPage() {
           <Link to="/special-posts/2" className="block w-full md:w-3/4">
             <div className="relative overflow-hidden rounded-lg shadow-lg flex w-200 h-96">
               <div className="w-1/2 h-48 flex-shrink-0">
-                <img src={foodImage5} alt="Special Food 2" className="w-full h-81 object-cover" />
+                <img src={hawkerImage2} alt="Special Food 2" className="w-full h-81 object-cover" />
               </div>
               <div className="flex flex-col justify-center p-4 w-1/2 bg-amber-900">
-                <span className="text-3xl font-bold text-yellow-200 font-playfair">Gurney Drive Hawker Center</span>
+                <span className="text-3xl font-bold text-yellow-200 font-playfair">Gurney Drive Hawker Centre</span>
                 <p className="text-sm mt-2 font-bold text-white font-merriweather">
-                  Home to the biggest variety of street food in Penang, Persiaran Gurney’s busy and iconic Gurney Drive Hawker Center, right beside Gurney Plaza Mall, is a great place to sample some of the best local dishes on the island. We recommend the char koay kak, soft white radish stir-fried with crunchy bean sprouts, chili, egg and pork lard, which is simply delicious, but also recommended is the barbecue roasting station (particularly the beef meatballs) which will please even the pickiest eater.
+                  Home to the biggest variety of street food in Penang, Persiaran Gurney’s busy and iconic Gurney Drive Hawker Centre, right beside Gurney Plaza Mall, is a great place to sample some of the best local dishes on the island. We recommend the char koay kak, soft white radish stir-fried with crunchy bean sprouts, chili, egg and pork lard, which is simply delicious, but also recommended is the barbecue roasting station (particularly the beef meatballs) which will please even the pickiest eater.
                   <br /><br />
                   The cafeteria-style seating is a little cramped, so the first thing to do is to find seats before ordering your food – in fact, copy the locals by standing behind diners who seem to be near finishing, then be ready to grab their soon-to-be-vacant seat.
                   <br /><br />
@@ -385,18 +401,18 @@ function FnBPage() {
           <Link to="/special-posts/1" className="block w-full md:w-3/4">
             <div className="relative overflow-hidden rounded-lg shadow-lg flex w-200 h-96">
               <div className="w-1/2 h-48 flex-shrink-0">
-                <img src={foodImage4} alt="Special Food 1" className="w-full h-81 object-cover" />
+                <img src={hawkerImage3} alt="Special Food 1" className="w-full h-81 object-cover" />
               </div>
               <div className="flex flex-col justify-center p-4 w-1/2 bg-yellow-200 ">
-                <span className="text-3xl font-bold text-amber-900 font-playfair">New Lane Hawker Center</span>
+                <span className="text-3xl font-bold text-amber-900 font-playfair">New World Park Hawker Centre</span>
                 <p className="text-sm mt-2 font-bold text-black font-merriweather">
-                  New Lane Hawker Center opens at 4 pm every day when Georgetown’s Lorong Baru closes down to vehicular traffic. Automobiles are required to find alternate routes to their destination because the street turns into a thriving outdoor hawker food center. Hawkers furiously fry up their specialties, which include char kway teow (flat rice noodles with cockles, prawns, chili and bean sprouts), and chee cheong fun (rice noodle rolls).
+                  This is one of the largest and most impressive Penang Hawkers. New World Park is also conveniently located in Georgetown and has a wide range of local and international cuisine available. If you have your own car – there is a reasonably large car park outside. It costs a few ringgits to park here. 
                   <br /><br />
-                  Expect to sit on colorful plastic tables and chairs on the roadside. Our favorite dish here is congee, a Chinese oatmeal made with rice instead of oats, which makes for a filling, hearty meal. Flavored with a variety of side dishes, anything from fresh crab and eggs to pork and ginger chicken, this is basically Chinese comfort food.
+                  The prices at New World Park are very good and comparable to most other Hawker centres in Penang. New World Park has a wide variety of food available. Here are a few examples to wet your apetite: Laksa, Otak Otak, Char Koay Teow. You can find Indian food, Chinese food and traditional Malaysian dishes at New World Park. Some of the more unique dishes include dim sum (which is more rare to find in Penang Hawkers)
                   <br /><br />
-                  Location: Lorong Baru, 10450 George Town, Penang, Malaysia
+                  Location: New World Park, 102, Jalan Burma, 10050 George Town, Penang, Malaysia
                   <br />
-                  Open: Daily from 4 pm to 2 am
+                  Open: Daily from 10 am to 10 pm
                 </p>
               </div>
             </div>
