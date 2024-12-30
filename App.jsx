@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import HomePage from './pages/Home';
-import TouristSpotPage from './pages/TouristSpot';
-import Accommodations from './pages/Accomodations';
-import FnBPage from './pages/FnB';
+import HomePage from './pages/HomePage';
+import TouristSpotPage from './pages/TouristPage';
+import Accommodations from './pages/AccomodationsPage';
+import FnBPage from './pages/FnBPage';
 import './styles/App.css';
 
 function ScrollToTop() {
@@ -21,8 +21,8 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="header">
-        <h1 className="title text-5xl">VISIT PENANG</h1>
-        <nav className="nav text-2xl ">
+        <h1 className="title text-2xl">VISIT PENANG</h1>
+        <nav className="nav text-l ">
           <Link to="/">Home</Link>
           <Link to="/food-and-beverages">Food and Beverages</Link>
           <Link to="/accommodations">Accommodations</Link>

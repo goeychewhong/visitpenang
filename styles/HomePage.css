@@ -265,12 +265,16 @@ transition: transform 0.5s;
 }
 
 .icon {
-  transition: transform 0.3s, box-shadow 0.3s;
+  scale: 0.6;
+  transition: transform 0.2s, box-shadow 0.3s, border 0.3s, color 0.3s;
 }
 
 .icon:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ff9800; /* Add a border */
+  color: #ff9800; /* Change color */
+  text-shadow: 0 0 10px rgba(255, 152, 0, 0.8); /* Add a glow effect */
 }
 
 .icon:active {

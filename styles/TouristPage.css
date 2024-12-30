@@ -1,0 +1,74 @@
+.tourist-spot-page {
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5em; /* Reduced from 3em */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.flowpane2 {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  border-radius: 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; /* Ensure snapping */
+}
+
+.flowpane2::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.scroll-button:active {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translateY(-50%) scale(1.2);
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
+
+.scaled-image {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.tourist-card {
+  flex: 0 0 auto;
+  width: 300px; /* Original width */
+  height: 400px; /* Original height */
+  scroll-snap-align: start; /* Ensure snapping */
+}
+

@@ -11,7 +11,7 @@
 
 .card:hover {
   transition: transform 0.15s;
-  transform: scale(1.1); /* Maintain size when hovered */
+  transform: scale(1.2); /* Maintain size when hovered */
 }
 
 .card-image {
@@ -29,7 +29,7 @@
   text-align: center; /* Center align the title */
   bottom: 0;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 18px;
   border-radius: 0px 0px 15px 15px; /* Add border radius */
   margin: 0;
   color: white;
@@ -49,9 +49,9 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 14px;
   color: white;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Fix gradient */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.05)); /* Fix gradient */
   padding: 10px; /* Add padding */
   text-align: center;
   margin: 0; /* Remove margin */
