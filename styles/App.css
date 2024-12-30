@@ -331,3 +331,11 @@
   color: #ccc;
   font-size: 14px;
 }
+
+.star-rating {
+  display: flex;
+  justify-content: center; /* Center the stars horizontally */
+  gap: 5px;
+  color: gold;
+  font-size: 1.5rem;
+}
