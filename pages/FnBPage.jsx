@@ -48,7 +48,7 @@ function FnBPage() {
         <p className="text-2xl text-gray-800 mb-8 text-center font-mountainsChristmas">
           Indulge in the diverse and delicious food scene in Penang. From street food to fine dining, there's something for everyone.
         </p>
-        <h2 className="text-4xl mb-8 mt-40 text-center font-bold text-yellow-700 font-barriecito">Food You Must Try in Penang</h2>
+        <h2 className="text-4xl mb-8 mt-15 text-center font-bold text-yellow-700 font-barriecito">Food You Must Try in Penang</h2>
         <p className="text-xl text-gray-800 mb-8 text-center font-mountainsChristmas">
           Penang is a food lover’s paradise, offering a rich blend of flavors from its diverse cultures. The island’s culinary scene is a vibrant mix of unique dishes that reflect its Malay, Chinese, and Indian influences, making it a must-visit destination for food enthusiasts.
         </p>
@@ -360,57 +360,57 @@ function FnBPage() {
           Discover the unique and special dishes that Penang has to offer. These are the must-try foods that you can't miss!
         </p>
         <div className="flex flex-col items-center gap-6">
-            <div className="relative overflow-hidden rounded-lg shadow-lg flex w-200 h-96">
-              <div className="w-1/2 h-48 flex-shrink-0">
-                <img src={hawkerImage1} alt="Special Food 1" className="w-full h-81 object-cover " />
-              </div>
-              <div className="flex flex-col justify-center text-justify p-1 w-1/2 bg-yellow-200 ">
-                <span className="text-3xl font-bold text-amber-900 font-playfair">New Lane Hawker Centre</span>
-                <p className="text-sm mt-2 font-bold text-black font-merriweather">
-                  New Lane Hawker Centre opens at 4 pm every day when Georgetown’s Lorong Baru closes down to vehicular traffic. Automobiles are required to find alternate routes to their destination because the street turns into a thriving outdoor hawker food centre. Hawkers furiously fry up their specialties, which include char kway teow (flat rice noodles with cockles, prawns, chili and bean sprouts), and chee cheong fun (rice noodle rolls).
-                  <br /><br />
-                  Expect to sit on colorful plastic tables and chairs on the roadside. Our favorite dish here is congee, a Chinese oatmeal made with rice instead of oats, which makes for a filling, hearty meal. Flavored with a variety of side dishes, anything from fresh crab and eggs to pork and ginger chicken, this is basically Chinese comfort food.
-                  <br /><br />
-                  Location: Lorong Baru, 10450 George Town, Penang, Malaysia
-                  <br />
-                  Open: Daily from 4 pm to 2 am
-                </p>
-              </div>
+          <div className="relative overflow-hidden rounded-lg shadow-lg flex w-full h-96">
+            <div className="w-1/2 h-full flex-shrink-0">
+              <img src={hawkerImage1} alt="New Lane Hawker Centre" className="w-full h-full object-cover" />
             </div>
-            <div className="relative overflow-hidden rounded-lg shadow-lg flex w-200 h-96">
-              <div className="w-1/2 h-48 flex-shrink-0">
-                <img src={hawkerImage2} alt="Special Food 2" className="w-full h-81 object-cover" />
-              </div>
-              <div className="flex flex-col justify-center text-justify p-1 w-1/2 bg-amber-900">
-                <span className="text-3xl font-bold text-yellow-200 font-playfair">Gurney Drive Hawker Centre</span>
-                <p className="text-sm mt-2 font-bold text-white font-merriweather">
-                  Home to the biggest variety of street food in Penang, Persiaran Gurney’s busy and iconic Gurney Drive Hawker Centre, right beside Gurney Plaza Mall, is a great place to sample some of the best local dishes on the island. We recommend the char koay kak, soft white radish stir-fried with crunchy bean sprouts, chili, egg and pork lard, which is simply delicious, but also recommended is the barbecue roasting station (particularly the beef meatballs) which will please even the pickiest eater.
-                  <br /><br />
-                  The cafeteria-style seating is a little cramped, so the first thing to do is to find seats before ordering your food – in fact, copy the locals by standing behind diners who seem to be near finishing, then be ready to grab their soon-to-be-vacant seat.
-                  <br /><br />
-                  Location: 172, Solok Gurney 1, Pulau Tikus, 10250 Jelutong, Penang, Malaysia
-                  <br />
-                  Open: Daily from 6 pm to midnight
-                </p>
-              </div>
+            <div className="flex flex-col justify-center text-justify p-6 w-1/2 bg-yellow-200">
+              <span className="text-3xl font-bold text-amber-900 font-playfair">New Lane Hawker Centre</span>
+              <p className="text-sm mt-2 font-bold text-black font-merriweather">
+                New Lane Hawker Centre opens at 4 pm every day when Georgetown’s Lorong Baru closes down to vehicular traffic. Automobiles are required to find alternate routes to their destination because the street turns into a thriving outdoor hawker food centre. Hawkers furiously fry up their specialties, which include char kway teow (flat rice noodles with cockles, prawns, chili and bean sprouts), and chee cheong fun (rice noodle rolls).
+                <br /><br />
+                Expect to sit on colorful plastic tables and chairs on the roadside. Our favorite dish here is congee, a Chinese oatmeal made with rice instead of oats, which makes for a filling, hearty meal. Flavored with a variety of side dishes, anything from fresh crab and eggs to pork and ginger chicken, this is basically Chinese comfort food.
+                <br /><br />
+                Location: Lorong Baru, 10450 George Town, Penang, Malaysia
+                <br />
+                Open: Daily from 4 pm to 2 am
+              </p>
             </div>
-            <div className="relative overflow-hidden rounded-lg shadow-lg flex w-200 h-96">
-              <div className="w-1/2 h-48 flex-shrink-0">
-                <img src={hawkerImage3} alt="Special Food 1" className="w-full h-81 object-cover" />
-              </div>
-              <div className="flex flex-col justify-center text-justify p-1 w-1/2 bg-yellow-200 ">
-                <span className="text-3xl font-bold text-amber-900 font-playfair">New World Park Hawker Centre</span>
-                <p className="text-sm mt-2 font-bold text-black font-merriweather">
-                  This is one of the largest and most impressive Penang Hawkers. New World Park is also conveniently located in Georgetown and has a wide range of local and international cuisine available. If you have your own car – there is a reasonably large car park outside. It costs a few ringgits to park here.
-                  <br /><br />
-                  The prices at New World Park are very good and comparable to most other Hawker centres in Penang. New World Park has a wide variety of food available. Here are a few examples to wet your apetite: Laksa, Otak Otak, Char Koay Teow. You can find Indian food, Chinese food and traditional Malaysian dishes at New World Park. Some of the more unique dishes include dim sum (which is more rare to find in Penang Hawkers)
-                  <br /><br />
-                  Location: New World Park, 102, Jalan Burma, 10050 George Town, Penang, Malaysia
-                  <br />
-                  Open: Daily from 10 am to 10 pm
-                </p>
-              </div>
+          </div>
+          <div className="relative overflow-hidden rounded-lg shadow-lg flex w-full h-96">
+            <div className="flex flex-col justify-center text-justify p-6 w-1/2 bg-amber-900">
+              <span className="text-3xl font-bold text-yellow-200 font-playfair">Gurney Drive Hawker Centre</span>
+              <p className="text-sm mt-2 font-bold text-white font-merriweather">
+                Home to the biggest variety of street food in Penang, Persiaran Gurney’s busy and iconic Gurney Drive Hawker Centre, right beside Gurney Plaza Mall, is a great place to sample some of the best local dishes on the island. We recommend the char koay kak, soft white radish stir-fried with crunchy bean sprouts, chili, egg and pork lard, which is simply delicious, but also recommended is the barbecue roasting station (particularly the beef meatballs) which will please even the pickiest eater.
+                <br /><br />
+                The cafeteria-style seating is a little cramped, so the first thing to do is to find seats before ordering your food – in fact, copy the locals by standing behind diners who seem to be near finishing, then be ready to grab their soon-to-be-vacant seat.
+                <br /><br />
+                Location: 172, Solok Gurney 1, Pulau Tikus, 10250 Jelutong, Penang, Malaysia
+                <br />
+                Open: Daily from 6 pm to midnight
+              </p>
             </div>
+            <div className="w-1/2 h-full flex-shrink-0">
+              <img src={hawkerImage2} alt="Gurney Drive Hawker Centre" className="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div className="relative overflow-hidden rounded-lg shadow-lg flex w-full h-96">
+            <div className="w-1/2 h-full flex-shrink-0">
+              <img src={hawkerImage3} alt="New World Park Hawker Centre" className="w-full h-full object-cover" />
+            </div>
+            <div className="flex flex-col justify-center text-justify p-6 w-1/2 bg-yellow-200">
+              <span className="text-3xl font-bold text-amber-900 font-playfair">New World Park Hawker Centre</span>
+              <p className="text-sm mt-2 font-bold text-black font-merriweather">
+                This is one of the largest and most impressive Penang Hawkers. New World Park is also conveniently located in Georgetown and has a wide range of local and international cuisine available. If you have your own car – there is a reasonably large car park outside. It costs a few ringgits to park here.
+                <br /><br />
+                The prices at New World Park are very good and comparable to most other Hawker centres in Penang. New World Park has a wide variety of food available. Here are a few examples to wet your apetite: Laksa, Otak Otak, Char Koay Teow. You can find Indian food, Chinese food and traditional Malaysian dishes at New World Park. Some of the more unique dishes include dim sum (which is more rare to find in Penang Hawkers)
+                <br /><br />
+                Location: New World Park, 102, Jalan Burma, 10050 George Town, Penang, Malaysia
+                <br />
+                Open: Daily from 10 am to 10 pm
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
