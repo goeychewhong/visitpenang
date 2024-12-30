@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Card.css';
+import '../styles/Homecard.css';
 
 function Card({ imageSrc, imageName, imageDescription }) {
     const [isHovered, setIsHovered] = useState(false);
