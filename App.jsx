@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import HomePage from './pages/HomePage';
 import TouristSpotPage from './pages/TouristPage';
-import Accommodations from './pages/AccomodationsPage';
+import Accommodations from './pages/AccommodationsPage';
 import FnBPage from './pages/FnBPage';
 import './styles/styles.css';
 

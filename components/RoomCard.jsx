@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import StarRating from './StarRating';
 
-const RoomCard = ({ images, title, description, location, priceRange, ratings }) => {
+const RoomCard = ({ images, title, description, location, priceRange, rating }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [fade, setFade] = useState(false);
 
@@ -41,9 +42,11 @@ const RoomCard = ({ images, title, description, location, priceRange, ratings })
             <div className="p-4">
                 <h2 className="text-xl font-bold mb-2 text-gray-900">{title}</h2>
                 <p className="text-gray-700 text-sm text-justify">{description}</p>
-                <p className="text-gray-700 text-sm text-justify"><strong>Location:</strong> {location}</p>
-                <p className="text-gray-700 text-sm text-justify"><strong>Price Range:</strong> {priceRange}</p>
-                <p className="text-gray-700 text-sm text-justify"><strong>Ratings:</strong> {ratings}</p>
+                <p className="text-gray-700 text-sm text-center"><strong>Location:</strong> {location}</p>
+                <p className="text-gray-700 text-sm text-center"><strong>Price Range:</strong> {priceRange}</p>
+                <div className="room-card-rating text-gray-700 text-sm text-center">
+                    <strong>Rating:</strong> <StarRating rating={rating} />
+                </div>
             </div>
         </div>
     );
