@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../styles/TouristLongCard.css";
+import "../styles/TouristCard.css";
 
-const TouristLongCard = ({ image, title, description }) => {
+const TouristCard = ({ image, title, description }) => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleDescription = () => {
@@ -9,11 +9,11 @@ const TouristLongCard = ({ image, title, description }) => {
   };
 
   return (
-    <div className="card2">
+    <div className="touristcard">
       <img src={image} alt={title} />
-      <div className="card2-body">
-        <div className="card2-title">{title}</div>
-        <div className={`card2-description ${expanded ? "expanded" : ""}`}>
+      <div className="touristcard-body">
+        <div className="touristcard-title">{title}</div>
+        <div className={`touristcard-description ${expanded ? "expanded" : ""}`}>
           {description}
         </div>
         <button className="toggle-button" onClick={toggleDescription}>
@@ -24,5 +24,5 @@ const TouristLongCard = ({ image, title, description }) => {
   );
 };
 
-export default TouristLongCard;
+export default TouristCard;
 

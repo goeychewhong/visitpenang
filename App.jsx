@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import TouristSpotPage from './pages/TouristPage';
 import Accommodations from './pages/AccomodationsPage';
 import FnBPage from './pages/FnBPage';
-import './styles/App.css';
+import './styles/styles.css';
 
 function ScrollToTop() {
   const { pathname } = useLocation();

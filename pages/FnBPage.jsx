@@ -1,27 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import foodImage1 from '../assets/food1.jpg';
-import foodImage2 from '../assets/food2.jpg';
-import foodImage3 from '../assets/food3.jpg';
-import foodImage4 from '../assets/food4.jpg';
-import foodImage5 from '../assets/food5.jpg';
-import foodImage6 from '../assets/food6.jpg';
-import drinkImage1 from '../assets/drink1.jpg';
-import drinkImage2 from '../assets/drink2.jpg';
-import drinkImage3 from '../assets/drink3.jpg';
-import drinkImage4 from '../assets/drink4.jpg';
-import drinkImage5 from '../assets/drink5.jpg';
-import drinkImage6 from '../assets/drink6.jpg';
-import dessertImage1 from '../assets/dessert1.jpg';
-import dessertImage2 from '../assets/dessert2.jpg';
-import dessertImage3 from '../assets/dessert3.jpg';
-import dessertImage4 from '../assets/dessert4.jpg';
-import dessertImage5 from '../assets/dessert5.jpg';
-import dessertImage6 from '../assets/dessert6.jpg';
-import hawkerImage1 from '../assets/hawker1.jpg';
-import hawkerImage2 from '../assets/hawker2.jpg';
-import hawkerImage3 from '../assets/hawker3.jpg';
-import bannerVideo from '../assets/banner.mp4'; // Import the banner video
+import foodImage1 from '../assets/Fnb/food1.jpg';
+import foodImage2 from '../assets/Fnb/food2.jpg';
+import foodImage3 from '../assets/Fnb/food3.jpg';
+import foodImage4 from '../assets/Fnb/food4.jpg';
+import foodImage5 from '../assets/Fnb/food5.jpg';
+import foodImage6 from '../assets/Fnb/food6.jpg';
+import drinkImage1 from '../assets/Fnb/drink1.jpg';
+import drinkImage2 from '../assets/Fnb/drink2.jpg';
+import '../styles/styles.css';
+import drinkImage3 from '../assets/Fnb/drink3.jpg';
+import drinkImage4 from '../assets/Fnb/drink4.jpg';
+import drinkImage5 from '../assets/Fnb/drink5.jpg';
+import drinkImage6 from '../assets/Fnb/drink6.jpg';
+import dessertImage1 from '../assets/Fnb/dessert1.jpg';
+import dessertImage2 from '../assets/Fnb/dessert2.jpg';
+import dessertImage3 from '../assets/Fnb/dessert3.jpg';
+import dessertImage4 from '../assets/Fnb/dessert4.jpg';
+import dessertImage5 from '../assets/Fnb/dessert5.jpg';
+import dessertImage6 from '../assets/Fnb/dessert6.jpg';
+import hawkerImage1 from '../assets/Fnb/hawker1.jpg';
+import hawkerImage2 from '../assets/Fnb/hawker2.jpg';
+import hawkerImage3 from '../assets/Fnb/hawker3.jpg';
+import bannerVideo from '../assets/Fnb/banner.mp4'; // Import the banner video
 import StarRating from '../components/StarRating'; // Import the StarRating component
 
 function scrollLeft(ref) {
@@ -39,7 +40,7 @@ function FnBPage() {
 
   return (
     <div className="min-h-screen bg-peach-100 flex flex-col items-center justify-center p-6">
-      <video className="w-full h-72 object-cover mb-6" autoPlay loop muted>
+      <video className="w-full h-72 object-cover mb-6 mt-24" autoPlay loop muted>
         <source src={bannerVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video> {/* Add the banner video */}

@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import video1 from '../assets/video1.mp4';
-import '../styles/HomePage.css'; // Import the new Home.css file
-import foodicon from '../assets/foodicon.svg';
-import touristicon from '../assets/touristspot.svg';
-import accomodationicon from '../assets/accomodation.svg';
+import video1 from '../assets/Home/video1.mp4';
+import '../styles/styles.css';
+import foodicon from '../assets/Home/foodicon.svg';
+import touristicon from '../assets/Home/touristspot.svg';
+import accomodationicon from '../assets/Home/accomodation.svg';
 import Card from '../components/Homecard';
-import image1 from '../assets/image1.jpg';
-import image2 from '../assets/image2.jpg';
-import image3 from '../assets/image3.jpg';
-import image4 from '../assets/image4.jpg';
-import image5 from '../assets/image5.jpg';
-import image6 from '../assets/image6.jpg';
-import image7 from '../assets/image7.jpg';
-import image8 from '../assets/image8.jpg';
-import image9 from '../assets/image9.jpg';
+import image1 from '../assets/Home/image1.jpg';
+import image2 from '../assets/Home/image2.jpg';
+import image3 from '../assets/Home/image3.jpg';
+import image4 from '../assets/Home/image4.jpg';
+import image5 from '../assets/Home/image5.jpg';
+import image6 from '../assets/Home/image6.jpg';
+import image7 from '../assets/Home/image7.jpg';
+import image8 from '../assets/Home/image8.jpg';
+import image9 from '../assets/Home/image9.jpg';
 
 function scrollLeft(ref) {
     ref.current.scrollBy({ left: -1200, behavior: 'smooth' });

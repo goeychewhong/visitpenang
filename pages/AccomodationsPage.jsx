@@ -1,17 +1,14 @@
 import React from 'react';
-import '../styles/Accomodations.css';
-import image1 from '../assets/image1.jpg';
-import Card from '../components/HomeCard';
+import '../styles/styles.css';
+import image1 from '../assets/Home/image1.jpg';
+import Card from '../components/Homecard'; // Ensure you have this component
 
 const Accommodations = () => {
     return (
         <>
-            <div className="tourist-spot-page mt-24"></div>
             <div className="min-h-screen bg-gradient-to-r from-gray-200 to-gray-400 flex flex-col items-center justify-center p-6">
-                <header className="header mt-32 text-justify text-gray-800">
-                    <h1>Accommodations in Penang</h1>
-                    <p>Discover the best resorts and hotels around Penang for a perfect stay.</p>
-                </header>
+                <h1 className="mt-32 text-justify text-gray-800">Accommodations in Penang</h1>
+                <p className="text-justify text-gray-800">Discover the best resorts and hotels around Penang for a perfect stay.</p>
                 <div>
                     <Card
                         imageSrc={image1}

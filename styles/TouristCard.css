@@ -1,4 +1,4 @@
-.card2 {
+.touristcard {
   scale: 0.8;
   border-radius: 10px;
   width: 676px;
@@ -9,22 +9,18 @@
   background-color: #fff;
 }
 
-.card2:hover {
-  transform: scale(1.05);
-}
-
-.card2 img {
+.touristcard img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.card2 .card2-body {
+.touristcard .touristcard-body {
   padding: 15px;
   background-color: rgb(255 247 237 / var(--tw-bg-opacity, 1));
 }
 
-.card2 .card2-title {
+.touristcard .touristcard-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
@@ -33,18 +29,18 @@
   color: #333;
 }
 
-.card2 .card2-description {
+.touristcard .touristcard-description {
   display: none;
   padding: 10px 0;
   text-align: justify;
   color: #666;
 }
 
-.card2 .card2-description.expanded {
+.touristcard .touristcard-description.expanded {
   display: block;
 }
 
-.card2 .toggle-button {
+.touristcard .toggle-button {
   display: block;
   width: 100%;
   text-align: center;
@@ -56,6 +52,6 @@
   transition: background-color 0.3s;
 }
 
-.card2 .toggle-button:hover {
+.touristcard .toggle-button:hover {
   background-color: #e0e0e0;
 }
