@@ -10,7 +10,8 @@ const Accommodations = () => {
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [priceRange, setPriceRange] = useState({ min: '', max: '' });
     const [ratingRange, setRatingRange] = useState({ min: '', max: '' });
-    const [hoveredFilter, setHoveredFilter] = useState(null);
+    const [showPriceRange, setShowPriceRange] = useState(false);
+    const [showRatingRange, setShowRatingRange] = useState(false);
 
     const categories = ['All', 'Apartments', 'Hotels', 'Villas', 'Resorts'];
 
@@ -271,43 +272,63 @@ const Accommodations = () => {
                                 <button
                                     key={category}
                                     onClick={() => setSelectedCategory(category)}
-                                    className={`p-2 border border-gray-300 rounded ${selectedCategory === category ? 'bg-gray-300' : ''}`}
+                                    className={`p-2 border border-gray-300 rounded ${selectedCategory === category ? 'bg-blue-950 text-white' : ''}`}
                                 >
                                     {category}
                                 </button>
                             ))}
                         </div>
                         <div className="flex items-center gap-2">
-                            <input
-                                type="number"
-                                placeholder="Min Price"
-                                value={priceRange.min}
-                                onChange={(e) => setPriceRange({ ...priceRange, min: e.target.value })}
-                                className="p-2 border border-gray-300 rounded"
-                            />
-                            <input
-                                type="number"
-                                placeholder="Max Price"
-                                value={priceRange.max}
-                                onChange={(e) => setPriceRange({ ...priceRange, max: e.target.value })}
-                                className="p-2 border border-gray-300 rounded"
-                            />
+                            <button
+                                onClick={() => setShowPriceRange(!showPriceRange)}
+                                className="p-2 border border-gray-300 rounded bg-blue-950 text-white"
+                            >
+                                Price Range
+                            </button>
+                            {showPriceRange && (
+                                <div className="flex items-center gap-2">
+                                    <input
+                                        type="number"
+                                        placeholder="Min Price"
+                                        value={priceRange.min}
+                                        onChange={(e) => setPriceRange({ ...priceRange, min: e.target.value })}
+                                        className="p-2 border border-gray-300 rounded"
+                                    />
+                                    <input
+                                        type="number"
+                                        placeholder="Max Price"
+                                        value={priceRange.max}
+                                        onChange={(e) => setPriceRange({ ...priceRange, max: e.target.value })}
+                                        className="p-2 border border-gray-300 rounded"
+                                    />
+                                </div>
+                            )}
                         </div>
                         <div className="flex items-center gap-2">
-                            <input
-                                type="number"
-                                placeholder="Min Rating"
-                                value={ratingRange.min}
-                                onChange={(e) => setRatingRange({ ...ratingRange, min: e.target.value })}
-                                className="p-2 border border-gray-300 rounded"
-                            />
-                            <input
-                                type="number"
-                                placeholder="Max Rating"
-                                value={ratingRange.max}
-                                onChange={(e) => setRatingRange({ ...ratingRange, max: e.target.value })}
-                                className="p-2 border border-gray-300 rounded"
-                            />
+                            <button
+                                onClick={() => setShowRatingRange(!showRatingRange)}
+                                className="p-2 border border-gray-300 rounded bg-blue-950 text-white"
+                            >
+                                Rating
+                            </button>
+                            {showRatingRange && (
+                                <div className="flex items-center gap-2">
+                                    <input
+                                        type="number"
+                                        placeholder="Min Rating"
+                                        value={ratingRange.min}
+                                        onChange={(e) => setRatingRange({ ...ratingRange, min: e.target.value })}
+                                        className="p-2 border border-gray-300 rounded"
+                                    />
+                                    <input
+                                        type="number"
+                                        placeholder="Max Rating"
+                                        value={ratingRange.max}
+                                        onChange={(e) => setRatingRange({ ...ratingRange, max: e.target.value })}
+                                        className="p-2 border border-gray-300 rounded"
+                                    />
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
