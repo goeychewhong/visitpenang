@@ -9,7 +9,7 @@ const RoomCard = ({ images, title, description, location, priceRange, ratings })
         setTimeout(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
             setFade(false);
-        }, 300);
+        }, 150);
     };
 
     const prevImage = () => {
@@ -17,7 +17,7 @@ const RoomCard = ({ images, title, description, location, priceRange, ratings })
         setTimeout(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
             setFade(false);
-        }, 300);
+        }, 150);
     };
 
     return (

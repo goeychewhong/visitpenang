@@ -37,20 +37,20 @@ function HomePage() {
                     Your browser does not support the video tag.
                 </video>
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-                <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-                    <h1 className="text-4xl mt-32 font-extrabold mb-4">Welcome to Penang</h1>
-                    <p className="text-l mb-12">Discover the best places to visit, eat, and stay in Penang.</p>
+                <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
+                    <h1 className="text-4xl mt-32 font-extrabold mb-4 text-center">Welcome to Penang</h1>
+                    <p className="text-l mb-12 text-center">Discover the best places to visit, eat, and stay in Penang.</p>
                     <div className="p-7 rounded-3xl mx-4">
-                        <h2 className="text-2xl font-bold mb-2 mt-12 text-white">Top Categories</h2>
-                        <div className="flex justify-center gap-60 mt-8">
+                        <h2 className="text-2xl font-bold mb-2 mt-12 text-white text-center">Top Categories</h2>
+                        <div className="flex justify-center gap-8 mt-8">
                             <Link to="/food-and-beverages">
-                                <img src={foodicon} alt="f&b" className="w-20 h-20 rounded-3xl icon" />
+                                <img src={foodicon} alt="f&b" className="w-16 h-16 rounded-3xl icon" />
                             </Link>
                             <Link to="/accommodations">
-                                <img src={accomodationicon} alt="accomodationicon" className="w-20 h-20 rounded-full icon" />
+                                <img src={accomodationicon} alt="accomodationicon" className="w-16 h-16 rounded-full icon" />
                             </Link>
                             <Link to="/tourist-spots">
-                                <img src={touristicon} alt="tourist" className="w-20 h-20 rounded-full icon" />
+                                <img src={touristicon} alt="tourist" className="w-16 h-16 rounded-full icon" />
                             </Link>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ function HomePage() {
                 <div className="home-container">
                     <div className="flex flex-col gap-4">
                     </div>
-                    <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left">
+                    <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left bggradient">
                         <h2 className="text-2xl font-bold mb-2 pt-6 pl-6 text-black">Foods</h2>
                         <p className="text-black pl-6 text-l">Indulge in the diverse and delicious food scene, from street food to fine dining.</p>
                         <div className="relative">
@@ -102,7 +102,7 @@ function HomePage() {
                             <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef1)}>&gt;</button>
                         </div>
                     </div>
-                    <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left">
+                    <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left bggradient">
                         <h2 className="text-2xl font-bold mb-2 pt-6 pl-6 text-black">Accommodations</h2>
                         <p className="text-black pl-6 text-l">Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses.</p>
                         <div className="relative">
@@ -128,7 +128,7 @@ function HomePage() {
                             <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef2)}>&gt;</button>
                         </div>
                     </div>
-                    <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left">
+                    <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left bggradient">
                         <h2 className="text-2xl font-bold mb-2 text-black pt-6 pl-6">Tourism</h2>
                         <p className="text-black pl-6 text-l">Indulge in the diverse and delicious food scene, from street food to fine dining.</p>
                         <div className="relative">

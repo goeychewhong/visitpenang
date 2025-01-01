@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import HomePage from './pages/HomePage';
 import TouristSpotPage from './pages/TouristPage';
 import Accommodations from './pages/AccomodationsPage';
@@ -17,8 +18,10 @@ function ScrollToTop() {
 }
 
 function App() {
+  const location = useLocation();
+
   return (
-    <Router>
+    <div>
       <ScrollToTop />
       <div className="header">
         <h1 className="title text-2xl">VISIT PENANG</h1>
@@ -29,12 +32,16 @@ function App() {
           <Link to="/tourist-spots">Tourist</Link>
         </nav>
       </div>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/tourist-spots" element={<TouristSpotPage />} />
-        <Route path="/food-and-beverages" element={<FnBPage />} />
-        <Route path="/accommodations" element={<Accommodations />} />
-      </Routes>
+      <TransitionGroup>
+        <CSSTransition key={location.key} classNames="fade" timeout={300}>
+          <Routes location={location}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/tourist-spots" element={<TouristSpotPage />} />
+            <Route path="/food-and-beverages" element={<FnBPage />} />
+            <Route path="/accommodations" element={<Accommodations />} />
+          </Routes>
+        </CSSTransition>
+      </TransitionGroup>
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-description">
@@ -62,8 +69,16 @@ function App() {
         <div className="footer-bottom">
         </div>
       </footer>
+    </div>
+  );
+}
+
+function AppWrapper() {
+  return (
+    <Router>
+      <App />
     </Router>
   );
 }
 
-export default App;
+export default AppWrapper;

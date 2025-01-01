@@ -6,12 +6,13 @@ function Card({ imageSrc, imageName, imageDescription }) {
 
     return (
         <div
-            className={`card ${isHovered ? 'hovered' : ''}`} // Add hovered class
+            className="card-image-container"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <div className="card-image" style={{ backgroundImage: `url(${imageSrc})` }}>
-                <h2 className={`card-title ${isHovered ? 'hovered' : ''}`}>{imageName}</h2>
+            <img src={imageSrc} alt={imageName} className="card-image" />
+            <div className={`overlay ${isHovered ? 'hovered' : ''}`}>
+                <h2 className="card-title">{imageName}</h2>
                 {isHovered && (
                     <p className="card-description">
                         {imageDescription}

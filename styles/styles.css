@@ -1,3 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
 /* TouristPage.css */
 .tourist-spot-page {
   padding: 20px;
@@ -65,11 +86,6 @@
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.scaled-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .tourist-card {
@@ -318,6 +334,10 @@
   margin-bottom: 24px;
 }
 
+.bggradient{
+  background: rgb(255 247 237 / var(--tw-bg-opacity, 1));
+}
+
 .flowpane {
   display: flex;
   justify-content: space-between;
@@ -326,9 +346,8 @@
   overflow: hidden;
   scroll-behavior: smooth;
   padding: 20px;
-  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  background: rgb(255 247 237 / var(--tw-bg-opacity, 1));
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .flowpane .card {
@@ -636,4 +655,58 @@ body {
 .card3 p {
   color: #4b5563;
   margin-top: 0.5rem;
+}
+
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .flowpane {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .scroll-button {
+    display: none;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .text-4xl {
+    font-size: 2rem;
+  }
+
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .text-l {
+    font-size: 1rem;
+  }
+
+  .p-6 {
+    padding: 1rem;
+  }
+
+  .p-4 {
+    padding: 1rem;
+  }
+
+  .mt-32 {
+    margin-top: 8rem;
+  }
+
+  .mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .gap-8 {
+    gap: 2rem;
+  }
+
+  .gap-60 {
+    gap: 1.5rem;
+  }
 }
