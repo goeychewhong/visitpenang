@@ -272,7 +272,7 @@ const Accommodations = () => {
                                 <button
                                     key={category}
                                     onClick={() => setSelectedCategory(category)}
-                                    className={`p-2 rounded ${selectedCategory === category ? 'text-blue-950' : 'text-yellow-600'}`}
+                                    className={`p-2 rounded transition-colors duration-700 ${selectedCategory === category ? 'text-blue-950' : 'text-yellow-600'}`}
                                 >
                                     {category}
                                 </button>
@@ -285,24 +285,26 @@ const Accommodations = () => {
                             >
                                 Price Range
                             </button>
-                            {showPriceRange && (
-                                <div className="flex items-center gap-2">
-                                    <input
-                                        type="number"
-                                        placeholder="Min Price"
-                                        value={priceRange.min}
-                                        onChange={(e) => setPriceRange({ ...priceRange, min: e.target.value })}
-                                        className="p-2 border border-gray-300 rounded"
-                                    />
-                                    <input
-                                        type="number"
-                                        placeholder="Max Price"
-                                        value={priceRange.max}
-                                        onChange={(e) => setPriceRange({ ...priceRange, max: e.target.value })}
-                                        className="p-2 border border-gray-300 rounded"
-                                    />
-                                </div>
-                            )}
+                            <div className={`transition-opacity duration-500 ${showPriceRange ? 'opacity-100' : 'opacity-0'}`}>
+                                {showPriceRange && (
+                                    <div className="flex items-center gap-2">
+                                        <input
+                                            type="number"
+                                            placeholder="Min Price"
+                                            value={priceRange.min}
+                                            onChange={(e) => setPriceRange({ ...priceRange, min: e.target.value })}
+                                            className="p-2 border border-gray-300 rounded"
+                                        />
+                                        <input
+                                            type="number"
+                                            placeholder="Max Price"
+                                            value={priceRange.max}
+                                            onChange={(e) => setPriceRange({ ...priceRange, max: e.target.value })}
+                                            className="p-2 border border-gray-300 rounded"
+                                        />
+                                    </div>
+                                )}
+                            </div>
                         </div>
                         <div className="flex items-center gap-2">
                             <button
@@ -311,24 +313,26 @@ const Accommodations = () => {
                             >
                                 Rating
                             </button>
-                            {showRatingRange && (
-                                <div className="flex items-center gap-2">
-                                    <input
-                                        type="number"
-                                        placeholder="Min Rating"
-                                        value={ratingRange.min}
-                                        onChange={(e) => setRatingRange({ ...ratingRange, min: e.target.value })}
-                                        className="p-2 border border-gray-300 rounded"
-                                    />
-                                    <input
-                                        type="number"
-                                        placeholder="Max Rating"
-                                        value={ratingRange.max}
-                                        onChange={(e) => setRatingRange({ ...ratingRange, max: e.target.value })}
-                                        className="p-2 border border-gray-300 rounded"
-                                    />
-                                </div>
-                            )}
+                            <div className={`transition-opacity duration-500 ${showRatingRange ? 'opacity-100' : 'opacity-0'}`}>
+                                {showRatingRange && (
+                                    <div className="flex items-center gap-2">
+                                        <input
+                                            type="number"
+                                            placeholder="Min Rating"
+                                            value={ratingRange.min}
+                                            onChange={(e) => setRatingRange({ ...ratingRange, min: e.target.value })}
+                                            className="p-2 border border-gray-300 rounded"
+                                        />
+                                        <input
+                                            type="number"
+                                            placeholder="Max Rating"
+                                            value={ratingRange.max}
+                                            onChange={(e) => setRatingRange({ ...ratingRange, max: e.target.value })}
+                                            className="p-2 border border-gray-300 rounded"
+                                        />
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
