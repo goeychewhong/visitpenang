@@ -272,7 +272,7 @@ const Accommodations = () => {
                                 <button
                                     key={category}
                                     onClick={() => setSelectedCategory(category)}
-                                    className={`p-2 border border-gray-300 rounded ${selectedCategory === category ? 'bg-blue-950 text-white' : ''}`}
+                                    className={`p-2 rounded ${selectedCategory === category ? 'text-blue-950' : 'text-yellow-600'}`}
                                 >
                                     {category}
                                 </button>
