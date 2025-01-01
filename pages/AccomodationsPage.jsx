@@ -1,19 +1,21 @@
-import React from 'react';
 import '../styles/styles.css';
 import image1 from '../assets/Home/image1.jpg';
-import Card from '../components/Homecard'; // Ensure you have this component
+import image2 from '../assets/Home/image2.jpg';
+import image3 from '../assets/Home/image3.jpg';
+import image4 from '../assets/Home/image4.jpg';
+import RoomCard from '../components/RoomCard';
 
 const Accommodations = () => {
     return (
         <>
-            <div className="min-h-screen bg-gradient-to-r from-gray-200 to-gray-400 flex flex-col items-center justify-center p-6">
-                <h1 className="mt-32 text-justify text-gray-800">Accommodations in Penang</h1>
-                <p className="text-justify text-gray-800">Discover the best resorts and hotels around Penang for a perfect stay.</p>
-                <div>
-                    <Card
-                        imageSrc={image1}
-                        imageName="Tourism Image 1"
-                        imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
+            <div className="bg-orange-50 p-6 pt-24">
+                <h1 className="text-left text-3xl font-bold mb-4">Accommodations in Penang</h1>
+                <p className="text-justify text-gray-800 mb-6">Discover the best resorts and hotels around Penang for a perfect stay.</p>
+                <div className = "px-24">
+                    <RoomCard
+                        images={[image1, image2, image3, image4]}
+                        title="Deluxe Room"
+                        description="A luxurious room with all the amenities you need for a comfortable stay."
                     />
                 </div>
             </div>
