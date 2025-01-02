@@ -1,9 +1,11 @@
 .card-image-container {
     position: relative;
-    width: 100%;
+    width: 420px;
     height: 300px; /* Adjust the height as needed */
     border-radius: 15px;
+    margin:10px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .card-image {

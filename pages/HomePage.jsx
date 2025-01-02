@@ -15,19 +15,41 @@ import image6 from '../assets/Home/image6.jpg';
 import image7 from '../assets/Home/image7.jpg';
 import image8 from '../assets/Home/image8.jpg';
 import image9 from '../assets/Home/image9.jpg';
+import '../styles/styles.css';
 
 function scrollLeft(ref) {
-    ref.current.scrollBy({ left: -1200, behavior: 'smooth' });
+    ref.current.scrollBy({ left: -300, behavior: 'smooth' });
 }
 
 function scrollRight(ref) {
-    ref.current.scrollBy({ left: 1200, behavior: 'smooth' });
+    ref.current.scrollBy({ left: 300, behavior: 'smooth' });
 }
 
 function HomePage() {
     const flowpaneRef1 = React.useRef(null);
     const flowpaneRef2 = React.useRef(null);
     const flowpaneRef3 = React.useRef(null);
+
+    const cards1 = [
+        { imageSrc: image1, imageName: "Tourism Image 1", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." },
+        { imageSrc: image2, imageName: "Tourism Image 2", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." },
+        { imageSrc: image3, imageName: "Tourism Image 3", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." },
+        { imageSrc: image4, imageName: "Tourism Image 4", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." },
+        { imageSrc: image5, imageName: "Tourism Image 5", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." },
+        { imageSrc: image6, imageName: "Tourism Image 6", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." }
+    ];
+
+    const cards2 = [
+        { imageSrc: image6, imageName: "Tourism Image 6", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." },
+        { imageSrc: image7, imageName: "Tourism Image 7", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." }   ,
+        { imageSrc: image8, imageName: "Tourism Image 8", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." }
+    ];
+
+    const cards3 = [
+        { imageSrc: image5, imageName: "Tourism Image 1", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." },
+        { imageSrc: image4, imageName: "Tourism Image 2", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." },
+        { imageSrc: image9, imageName: "Tourism Image 2", imageDescription: "Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses." }
+    ];
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center">
@@ -65,93 +87,54 @@ function HomePage() {
                         <h2 className="text-2xl font-bold mb-2 pt-6 pl-6 text-black">Foods</h2>
                         <p className="text-black pl-6 text-l">Indulge in the diverse and delicious food scene, from street food to fine dining.</p>
                         <div className="relative">
-                            <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef1)}>&lt;</button>
+                            {cards1.length > 3 && <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef1)}>&lt;</button>}
                             <div className="flowpane" ref={flowpaneRef1}>
-                                <Card
-                                    imageSrc={image1}
-                                    imageName="Tourism Image 1"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                <Card
-                                    imageSrc={image2}
-                                    imageName="Tourism Image 2"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                <Card
-                                    imageSrc={image3}
-                                    imageName="Tourism Image 3"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                <Card
-                                    imageSrc={image4}
-                                    imageName="Tourism Image 4"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                <Card
-                                    imageSrc={image5}
-                                    imageName="Tourism Image 5"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                <Card
-                                    imageSrc={image6}
-                                    imageName="Tourism Image 6"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                {/* Add more Card components as needed */}
+                                {cards1.map((card, index) => (
+                                    <Card
+                                        key={index}
+                                        imageSrc={card.imageSrc}
+                                        imageName={card.imageName}
+                                        imageDescription={card.imageDescription}
+                                    />
+                                ))}
                             </div>
-                            <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef1)}>&gt;</button>
+                            {cards1.length > 3 && <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef1)}>&gt;</button>}
                         </div>
                     </div>
                     <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left bggradient">
                         <h2 className="text-2xl font-bold mb-2 pt-6 pl-6 text-black">Accommodations</h2>
                         <p className="text-black pl-6 text-l">Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses.</p>
                         <div className="relative">
-                            <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef2)}>&lt;</button>
+                            {cards2.length > 3 && <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef2)}>&lt;</button>}
                             <div className="flowpane" ref={flowpaneRef2}>
-                                <Card
-                                    imageSrc={image6}
-                                    imageName="Tourism Image 6"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                <Card
-                                    imageSrc={image7}
-                                    imageName="Tourism Image 7"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                <Card
-                                    imageSrc={image8}
-                                    imageName="Tourism Image 8"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                {/* Add more Card components as needed */}
+                                {cards2.map((card, index) => (
+                                    <Card
+                                        key={index}
+                                        imageSrc={card.imageSrc}
+                                        imageName={card.imageName}
+                                        imageDescription={card.imageDescription}
+                                    />
+                                ))}
                             </div>
-                            <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef2)}>&gt;</button>
+                            {cards2.length > 3 && <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef2)}>&gt;</button>}
                         </div>
                     </div>
                     <div className="section bg-orange-50 p-4 rounded-2xl shadow-2xl text-left bggradient">
                         <h2 className="text-2xl font-bold mb-2 text-black pt-6 pl-6">Tourism</h2>
                         <p className="text-black pl-6 text-l">Indulge in the diverse and delicious food scene, from street food to fine dining.</p>
                         <div className="relative">
-                            <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef3)}>&lt;</button>
+                            {cards3.length > 3 && <button className="scroll-button left" onClick={() => scrollLeft(flowpaneRef3)}>&lt;</button>}
                             <div className="flowpane" ref={flowpaneRef3}>
-                                <Card
-                                    imageSrc={image5}
-                                    imageName="Tourism Image 1"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                <Card
-                                    imageSrc={image4}
-                                    imageName="Tourism Image 2"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                <Card
-                                    imageSrc={image9}
-                                    imageName="Tourism Image 2"
-                                    imageDescription="Find the perfect place to stay, whether you prefer luxury hotels or cozy guesthouses."
-                                />
-                                {/* Add more Card components as needed */}
+                                {cards3.map((card, index) => (
+                                    <Card
+                                        key={index}
+                                        imageSrc={card.imageSrc}
+                                        imageName={card.imageName}
+                                        imageDescription={card.imageDescription}
+                                    />
+                                ))}
                             </div>
-                            <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef3)}>&gt;</button>
+                            {cards3.length > 3 && <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef3)}>&gt;</button>}
                         </div>
                     </div>
                 </div>
