@@ -23,7 +23,7 @@ const Accommodations = () => {
             description: 'A luxurious apartment with all the amenities you need for a comfortable stay.',
             images: [image1, image2, image3, image4],
             location: 'George Town',
-            priceRange: '$100 - $150',
+            priceRange: 'RM100 - RM150',
             rating: 4,
         },
         {
@@ -32,7 +32,7 @@ const Accommodations = () => {
             description: 'A spacious apartment with modern decor and comfortable furnishings.',
             images: [image1, image2, image3, image4],
             location: 'Batu Ferringhi',
-            priceRange: '$120 - $170',
+            priceRange: 'RM120 - RM170',
             rating: 5,
         },
         {
@@ -41,7 +41,7 @@ const Accommodations = () => {
             description: 'A cozy apartment with all the basic amenities for a pleasant stay.',
             images: [image1, image2, image3, image4],
             location: 'Tanjung Bungah',
-            priceRange: '$80 - $130',
+            priceRange: 'RM80 - RM130',
             rating: 3,
         },
         {
@@ -50,7 +50,7 @@ const Accommodations = () => {
             description: 'An elegant apartment with premium amenities and stunning views.',
             images: [image1, image2, image3, image4],
             location: 'Gurney Drive',
-            priceRange: '$150 - $200',
+            priceRange: 'RM150 - RM200',
             rating: 5,
         },
         {
@@ -59,7 +59,7 @@ const Accommodations = () => {
             description: 'An affordable apartment with essential amenities for a comfortable stay.',
             images: [image1, image2, image3, image4],
             location: 'Air Itam',
-            priceRange: '$50 - $100',
+            priceRange: 'RM50 - RM100',
             rating: 3,
         },
         {
@@ -68,7 +68,7 @@ const Accommodations = () => {
             description: 'A spacious apartment with multiple rooms, perfect for families.',
             images: [image1, image2, image3, image4],
             location: 'Bayan Lepas',
-            priceRange: '$100 - $150',
+            priceRange: 'RM100 - RM150',
             rating: 4,
         },
         // Hotels
@@ -78,7 +78,7 @@ const Accommodations = () => {
             description: 'A luxurious hotel room with all the amenities you need for a comfortable stay.',
             images: [image1, image2, image3, image4],
             location: 'George Town',
-            priceRange: '$100 - $150',
+            priceRange: 'RM100 - RM150',
             rating: 4,
         },
         {
@@ -87,7 +87,7 @@ const Accommodations = () => {
             description: 'A spacious hotel room with modern decor and comfortable furnishings.',
             images: [image1, image2, image3, image4],
             location: 'Batu Ferringhi',
-            priceRange: '$120 - $170',
+            priceRange: 'RM120 - RM170',
             rating: 5,
         },
         {
@@ -96,7 +96,7 @@ const Accommodations = () => {
             description: 'A cozy hotel room with all the basic amenities for a pleasant stay.',
             images: [image1, image2, image3, image4],
             location: 'Tanjung Bungah',
-            priceRange: '$80 - $130',
+            priceRange: 'RM80 - RM130',
             rating: 3,
         },
         {
@@ -105,7 +105,7 @@ const Accommodations = () => {
             description: 'An elegant hotel room with premium amenities and stunning views.',
             images: [image1, image2, image3, image4],
             location: 'Gurney Drive',
-            priceRange: '$150 - $200',
+            priceRange: 'RM150 - RM200',
             rating: 5,
         },
         {
@@ -114,7 +114,7 @@ const Accommodations = () => {
             description: 'An affordable hotel room with essential amenities for a comfortable stay.',
             images: [image1, image2, image3, image4],
             location: 'Air Itam',
-            priceRange: '$50 - $100',
+            priceRange: 'RM50 - RM100',
             rating: 3,
         },
         {
@@ -123,7 +123,7 @@ const Accommodations = () => {
             description: 'A spacious hotel room with multiple rooms, perfect for families.',
             images: [image1, image2, image3, image4],
             location: 'Bayan Lepas',
-            priceRange: '$100 - $150',
+            priceRange: 'RM100 - RM150',
             rating: 4,
         },
         // Villas
@@ -133,7 +133,7 @@ const Accommodations = () => {
             description: 'A luxurious villa with all the amenities you need for a comfortable stay.',
             images: [image1, image2, image3, image4],
             location: 'George Town',
-            priceRange: '$200 - $250',
+            priceRange: 'RM200 - RM250',
             rating: 4,
         },
         {
@@ -142,7 +142,7 @@ const Accommodations = () => {
             description: 'A spacious villa with modern decor and comfortable furnishings.',
             images: [image1, image2, image3, image4],
             location: 'Batu Ferringhi',
-            priceRange: '$200 - $250',
+            priceRange: 'RM200 - RM250',
             rating: 5,
         },
         {
@@ -151,7 +151,7 @@ const Accommodations = () => {
             description: 'A cozy villa with all the basic amenities for a pleasant stay.',
             images: [image1, image2, image3, image4],
             location: 'Tanjung Bungah',
-            priceRange: '$150 - $200',
+            priceRange: 'RM150 - RM200',
             rating: 3,
         },
         {
@@ -160,7 +160,7 @@ const Accommodations = () => {
             description: 'An elegant villa with premium amenities and stunning views.',
             images: [image1, image2, image3, image4],
             location: 'Gurney Drive',
-            priceRange: '$250 - $300',
+            priceRange: 'RM250 - RM300',
             rating: 5,
         },
         {
@@ -169,7 +169,7 @@ const Accommodations = () => {
             description: 'An affordable villa with essential amenities for a comfortable stay.',
             images: [image1, image2, image3, image4],
             location: 'Air Itam',
-            priceRange: '$100 - $150',
+            priceRange: 'RM100 - RM150',
             rating: 3,
         },
         {
@@ -178,7 +178,7 @@ const Accommodations = () => {
             description: 'A spacious villa with multiple rooms, perfect for families.',
             images: [image1, image2, image3, image4],
             location: 'Bayan Lepas',
-            priceRange: '$200 - $250',
+            priceRange: 'RM200 - RM250',
             rating: 4,
         },
         // Resorts
@@ -188,7 +188,7 @@ const Accommodations = () => {
             description: 'A luxurious resort room with all the amenities you need for a comfortable stay.',
             images: [image1, image2, image3, image4],
             location: 'George Town',
-            priceRange: '$150 - $200',
+            priceRange: 'RM150 - RM200',
             rating: 4,
         },
         {
@@ -197,7 +197,7 @@ const Accommodations = () => {
             description: 'A spacious resort room with modern decor and comfortable furnishings.',
             images: [image1, image2, image3, image4],
             location: 'Batu Ferringhi',
-            priceRange: '$200 - $250',
+            priceRange: 'RM200 - RM250',
             rating: 5,
         },
         {
@@ -206,7 +206,7 @@ const Accommodations = () => {
             description: 'A cozy resort room with all the basic amenities for a pleasant stay.',
             images: [image1, image2, image3, image4],
             location: 'Tanjung Bungah',
-            priceRange: '$150 - $200',
+            priceRange: 'RM150 - RM200',
             rating: 3,
         },
         {
@@ -215,7 +215,7 @@ const Accommodations = () => {
             description: 'An elegant resort room with premium amenities and stunning views.',
             images: [image1, image2, image3, image4],
             location: 'Gurney Drive',
-            priceRange: '$200 - $250',
+            priceRange: 'RM200 - RM250',
             rating: 5,
         },
         {
@@ -224,7 +224,7 @@ const Accommodations = () => {
             description: 'An affordable resort room with essential amenities for a comfortable stay.',
             images: [image1, image2, image3, image4],
             location: 'Air Itam',
-            priceRange: '$100 - $150',
+            priceRange: 'RM100 - RM150',
             rating: 3,
         },
         {
@@ -233,7 +233,7 @@ const Accommodations = () => {
             description: 'A spacious resort room with multiple rooms, perfect for families.',
             images: [image1, image2, image3, image4],
             location: 'Bayan Lepas',
-            priceRange: '$150 - $200',
+            priceRange: 'RM150 - RM200',
             rating: 4,
         },
     ];
