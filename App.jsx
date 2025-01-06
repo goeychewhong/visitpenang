@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import TouristSpotPage from './pages/TouristPage';
-import Accommodations from './pages/AccommodationsPage';
-import FnBPage from './pages/FnBPage';
 import './styles/styles.css';
 
 function ScrollToTop() {
@@ -18,30 +14,19 @@ function ScrollToTop() {
 }
 
 function App() {
-  const location = useLocation();
-
   return (
     <div>
       <ScrollToTop />
       <div className="header">
-        <h1 className="title text-2xl">VISIT PENANG</h1>
-        <nav className="nav text-l ">
-          <Link to="/">Home</Link>
-          <Link to="/food-and-beverages">Food and Beverages</Link>
-          <Link to="/accommodations">Accommodations</Link>
-          <Link to="/tourist-spots">Tourist</Link>
+        <h1 className="title text-4xl">VISIT PENANG</h1>
+        <nav className="nav text-l">
+          <Link to="#home" className="text-2xl">Home</Link>
+          <Link to="#food-and-beverages" className="text-2xl">Food and Beverages</Link>
+          <Link to="#accommodations" className="text-2xl">Accommodations</Link>
+          <Link to="#tourist-spots" className="text-2xl">Tourist</Link>
         </nav>
       </div>
-      <TransitionGroup>
-        <CSSTransition key={location.key} classNames="fade" timeout={300}>
-          <Routes location={location}>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/tourist-spots" element={<TouristSpotPage />} />
-            <Route path="/food-and-beverages" element={<FnBPage />} />
-            <Route path="/accommodations" element={<Accommodations />} />
-          </Routes>
-        </CSSTransition>
-      </TransitionGroup>
+      <HomePage />
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-description">
@@ -53,10 +38,10 @@ function App() {
           <div className="footer-links">
             <h2 className="footer-title">Quick Links</h2>
             <nav className="footer-nav">
-              <Link to="/">Home</Link>
-              <Link to="/tourist-spots">Tourist</Link>
-              <Link to="/food-and-beverages">Food and Beverages</Link>
-              <Link to="/accommodations">Accommodations</Link>
+              <Link to="#home">Home</Link>
+              <Link to="#tourist-spots">Tourist</Link>
+              <Link to="#food-and-beverages">Food and Beverages</Link>
+              <Link to="#accommodations">Accommodations</Link>
             </nav>
           </div>
           <div className="footer-contact">
@@ -65,8 +50,6 @@ function App() {
             <p className="footer-text">Phone: +60 124609110</p>
             <p className="footer-text">Address: Penang, Malaysia</p>
           </div>
-        </div>
-        <div className="footer-bottom">
         </div>
       </footer>
     </div>

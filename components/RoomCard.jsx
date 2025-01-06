@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import StarRating from './StarRating';
+import '../styles/RoomCard.css';
 
 const RoomCard = ({ images, title, description, location, priceRange, rating }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [fade, setFade] = useState(false);
+    const [imagePosition, setImagePosition] = useState({ top: 0, left: 0 });
 
     const nextImage = () => {
         setFade(true);
@@ -20,9 +22,8 @@ const RoomCard = ({ images, title, description, location, priceRange, rating }) 
             setFade(false);
         }, 150);
     };
-
     return (
-        <div className="room-card bg-white shadow-lg rounded-lg overflow-hidden w-[500px] h-[550px]">
+        <div className="room-card hover:bg-white shadow-lg rounded-2g overflow-hidden w-[500px] h-[550px]">
             <div className="relative h-[350px]">
                 <img
                     src={images[currentImageIndex]}
@@ -41,10 +42,10 @@ const RoomCard = ({ images, title, description, location, priceRange, rating }) 
             </div>
             <div className="p-4">
                 <h2 className="text-xl font-bold mb-2 text-gray-900">{title}</h2>
-                <p className="text-gray-700 text-sm text-justify">{description}</p>
-                <p className="text-gray-700 text-sm text-center"><strong>Location:</strong> {location}</p>
-                <p className="text-gray-700 text-sm text-center"><strong>Price Range:</strong> {priceRange}</p>
-                <div className="room-card-rating text-gray-700 text-sm text-center">
+                <p className="text-gray-700 text-base text-justify">{description}</p>
+                <p className="text-gray-700 text-base text-center"><strong>Location:</strong> {location}</p>
+                <p className="text-gray-700 text-base text-center"><strong>Price Range:</strong> {priceRange}</p>
+                <div className="room-card-rating text-gray-700 text-base text-center">
                     <strong>Rating:</strong> <StarRating rating={rating} />
                 </div>
             </div>

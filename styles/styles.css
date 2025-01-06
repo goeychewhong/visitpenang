@@ -710,3 +710,11 @@ body {
     gap: 1.5rem;
   }
 }
+
+
+.page-container {
+  margin: 16px; /* Adjust the margin as needed */
+  padding: 16px; /* Add padding if necessary */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  width: 100%; /* Ensure it takes the full width of its container */
+}

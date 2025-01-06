@@ -57,8 +57,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: transparent;
-  box-shadow: none;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: absolute;
   width: 100%;
   top: 0;
@@ -87,11 +87,14 @@
   padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: #fff;
 }
 
 .nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
 }
 
 .nav a.active {
@@ -270,7 +273,7 @@
 }
 
 .footer {
-  background-color: #333;
+  background: linear-gradient(90deg, #333, #555);
   color: #fff;
   padding: 40px 20px;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
@@ -294,7 +297,7 @@
 .footer-title {
   font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: #ff7e5f;
   margin-bottom: 10px;
 }
 
@@ -311,24 +314,24 @@
 
 .footer-nav a {
   text-decoration: none;
-  color: #007bff;
+  color: #feb47b;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .footer-nav a:hover {
-  color: #0056b3;
+  color: #ff7e5f;
 }
 
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
-  border-top: 1px solid #444;
+  border-top: 1px solid #666;
   padding-top: 20px;
 }
 
 .footer-bottom-text {
-  color: #ccc;
+  color: #bbb;
   font-size: 14px;
 }
 
