@@ -1,9 +1,52 @@
 import React, { useState } from 'react';
 import '../styles/styles.css';
-import image1 from '../assets/Home/image1.jpg';
-import image2 from '../assets/Home/image2.jpg';
-import image3 from '../assets/Home/image3.jpg';
-import image4 from '../assets/Home/image4.jpg';
+import Bayview1 from '../assets/Accommodations/Bayview Beach Resort/Bayview1.Webp';
+import Bayview2 from '../assets/Accommodations/Bayview Beach Resort/Bayview2.Webp';
+import Bayview3 from '../assets/Accommodations/Bayview Beach Resort/Bayview3.Webp';
+import Bayview4 from '../assets/Accommodations/Bayview Beach Resort/Bayview4.webp';
+import Bayview5 from '../assets/Accommodations/Bayview Beach Resort/Bayview5.jpg';
+import Eastern1 from '../assets/Accommodations/Eastern And Oriental Hotel/Eastern1.webp';
+import Eastern2 from '../assets/Accommodations/Eastern And Oriental Hotel/Eastern2.webp';
+import Eastern3 from '../assets/Accommodations/Eastern And Oriental Hotel/Eastern3.webp';
+import Eastern4 from '../assets/Accommodations/Eastern And Oriental Hotel/Eastern4.webp';
+import Eastern5 from '../assets/Accommodations/Eastern And Oriental Hotel/Eastern5.jpg';
+import G1 from '../assets/Accommodations/G Hotel Gurney/G1.webp';
+import G2 from '../assets/Accommodations/G Hotel Gurney/G2.webp';
+import G3 from '../assets/Accommodations/G Hotel Gurney/G3.webp';
+import G4 from '../assets/Accommodations/G Hotel Gurney/G4.webp';
+import G5 from '../assets/Accommodations/G Hotel Gurney/G5.webp';
+import Gur1 from '../assets/Accommodations/Gurney Bay Hotel/Gur1.webp';
+import Gur2 from '../assets/Accommodations/Gurney Bay Hotel/Gur2.jpg';
+import Gur3 from '../assets/Accommodations/Gurney Bay Hotel/Gur3.jpg';
+import Gur4 from '../assets/Accommodations/Gurney Bay Hotel/Gur4.jpg';
+import Gur5 from '../assets/Accommodations/Gurney Bay Hotel/Gur5.jpg';
+import Hard1 from '../assets/Accommodations/Hard Rock Hotel Penang/Hard1.webp';
+import Hard2 from '../assets/Accommodations/Hard Rock Hotel Penang/Hard2.webp';
+import Hard3 from '../assets/Accommodations/Hard Rock Hotel Penang/Hard3.webp';
+import Hard4 from '../assets/Accommodations/Hard Rock Hotel Penang/Hard4.jpg';
+import Hard5 from '../assets/Accommodations/Hard Rock Hotel Penang/Hard5.jpg';
+import Park1 from '../assets/Accommodations/Parkroyal Penang Resort/Park1.webp';
+import Park2 from '../assets/Accommodations/Parkroyal Penang Resort/Park2.webp';
+import Park3 from '../assets/Accommodations/Parkroyal Penang Resort/Park3.jpg';
+import Park4 from '../assets/Accommodations/Parkroyal Penang Resort/Park4.webp';
+import Shang1 from '../assets/Accommodations/Shangri-La Golden Sands, Penang/Shang1.webp';
+import Shang2 from '../assets/Accommodations/Shangri-La Golden Sands, Penang/Shang2.webp';
+import Shang3 from '../assets/Accommodations/Shangri-La Golden Sands, Penang/Shang3.webp';
+import Shang4 from '../assets/Accommodations/Shangri-La Golden Sands, Penang/Shang4.jpg';
+import Shang5 from '../assets/Accommodations/Shangri-La Golden Sands, Penang/Shang5.jpg';
+import Sur1 from '../assets/Accommodations/Surprised Homestay Butterworth/Sur1.webp';
+import Sur2 from '../assets/Accommodations/Surprised Homestay Butterworth/Sur2.jpg';
+import Sur3 from '../assets/Accommodations/Surprised Homestay Butterworth/Sur3.jpg';
+import Sur4 from '../assets/Accommodations/Surprised Homestay Butterworth/Sur4.jpg';
+import Sur5 from '../assets/Accommodations/Surprised Homestay Butterworth/Sur5.webp';
+import Val1 from '../assets/Accommodations/Value Inn Homestay/Val1.webp';
+import Val2 from '../assets/Accommodations/Value Inn Homestay/Val2.jpg';
+import Val3 from '../assets/Accommodations/Value Inn Homestay/Val3.jpg';
+import Val4 from '../assets/Accommodations/Value Inn Homestay/Val4.jpg';
+import Val5 from '../assets/Accommodations/Value Inn Homestay/Val5.webp';
+
+
+
 import RoomCard from '../components/RoomCard';
 
 const Accommodations = () => {
@@ -12,7 +55,6 @@ const Accommodations = () => {
     const [ratingRange, setRatingRange] = useState({ min: '', max: '' });
     const [showPriceRange, setShowPriceRange] = useState(false);
     const [showRatingRange, setShowRatingRange] = useState(false);
-
     const categories = ['All', 'Apartments', 'Hotels', 'Villas', 'Resorts'];
 
     const cards = [
@@ -21,53 +63,8 @@ const Accommodations = () => {
             category: 'Apartments',
             title: 'Deluxe Apartment',
             description: 'A luxurious apartment with all the amenities you need for a comfortable stay.',
-            images: [image1, image2, image3, image4],
+            images: [Bayview1,Bayview2, Bayview3, Bayview4, Bayview5],
             location: 'George Town',
-            priceRange: 'RM100 - RM150',
-            rating: 4,
-        },
-        {
-            category: 'Apartments',
-            title: 'Superior Apartment',
-            description: 'A spacious apartment with modern decor and comfortable furnishings.',
-            images: [image1, image2, image3, image4],
-            location: 'Batu Ferringhi',
-            priceRange: 'RM120 - RM170',
-            rating: 5,
-        },
-        {
-            category: 'Apartments',
-            title: 'Standard Apartment',
-            description: 'A cozy apartment with all the basic amenities for a pleasant stay.',
-            images: [image1, image2, image3, image4],
-            location: 'Tanjung Bungah',
-            priceRange: 'RM80 - RM130',
-            rating: 3,
-        },
-        {
-            category: 'Apartments',
-            title: 'Luxury Apartment',
-            description: 'An elegant apartment with premium amenities and stunning views.',
-            images: [image1, image2, image3, image4],
-            location: 'Gurney Drive',
-            priceRange: 'RM150 - RM200',
-            rating: 5,
-        },
-        {
-            category: 'Apartments',
-            title: 'Budget Apartment',
-            description: 'An affordable apartment with essential amenities for a comfortable stay.',
-            images: [image1, image2, image3, image4],
-            location: 'Air Itam',
-            priceRange: 'RM50 - RM100',
-            rating: 3,
-        },
-        {
-            category: 'Apartments',
-            title: 'Family Apartment',
-            description: 'A spacious apartment with multiple rooms, perfect for families.',
-            images: [image1, image2, image3, image4],
-            location: 'Bayan Lepas',
             priceRange: 'RM100 - RM150',
             rating: 4,
         },
@@ -76,7 +73,7 @@ const Accommodations = () => {
             category: 'Hotels',
             title: 'Deluxe Hotel Room',
             description: 'A luxurious hotel room with all the amenities you need for a comfortable stay.',
-            images: [image1, image2, image3, image4],
+            images: [Bayview1, Bayview2, Bayview3, Bayview4, Bayview5],
             location: 'George Town',
             priceRange: 'RM100 - RM150',
             rating: 4,
@@ -85,7 +82,7 @@ const Accommodations = () => {
             category: 'Hotels',
             title: 'Superior Hotel Room',
             description: 'A spacious hotel room with modern decor and comfortable furnishings.',
-            images: [image1, image2, image3, image4],
+            images: [Eastern1, Eastern2, Eastern3, Eastern4, Eastern5],
             location: 'Batu Ferringhi',
             priceRange: 'RM120 - RM170',
             rating: 5,
@@ -94,7 +91,7 @@ const Accommodations = () => {
             category: 'Hotels',
             title: 'Standard Hotel Room',
             description: 'A cozy hotel room with all the basic amenities for a pleasant stay.',
-            images: [image1, image2, image3, image4],
+            images: [G1, G2, G3, G4, G5],
             location: 'Tanjung Bungah',
             priceRange: 'RM80 - RM130',
             rating: 3,
@@ -103,7 +100,7 @@ const Accommodations = () => {
             category: 'Hotels',
             title: 'Luxury Hotel Room',
             description: 'An elegant hotel room with premium amenities and stunning views.',
-            images: [image1, image2, image3, image4],
+            images: [Gur1, Gur2, Gur3, Gur4, Gur5],
             location: 'Gurney Drive',
             priceRange: 'RM150 - RM200',
             rating: 5,
@@ -112,7 +109,7 @@ const Accommodations = () => {
             category: 'Hotels',
             title: 'Budget Hotel Room',
             description: 'An affordable hotel room with essential amenities for a comfortable stay.',
-            images: [image1, image2, image3, image4],
+            images: [Hard1, Hard2, Hard3, Hard4, Hard5],
             location: 'Air Itam',
             priceRange: 'RM50 - RM100',
             rating: 3,
@@ -121,7 +118,7 @@ const Accommodations = () => {
             category: 'Hotels',
             title: 'Family Hotel Room',
             description: 'A spacious hotel room with multiple rooms, perfect for families.',
-            images: [image1, image2, image3, image4],
+            images: [Park1, Park2, Park3, Park4],
             location: 'Bayan Lepas',
             priceRange: 'RM100 - RM150',
             rating: 4,
@@ -131,7 +128,7 @@ const Accommodations = () => {
             category: 'Villas',
             title: 'Deluxe Villa',
             description: 'A luxurious villa with all the amenities you need for a comfortable stay.',
-            images: [image1, image2, image3, image4],
+            images: [Shang1, Shang2, Shang3, Shang4, Shang5],
             location: 'George Town',
             priceRange: 'RM200 - RM250',
             rating: 4,
@@ -140,7 +137,7 @@ const Accommodations = () => {
             category: 'Villas',
             title: 'Superior Villa',
             description: 'A spacious villa with modern decor and comfortable furnishings.',
-            images: [image1, image2, image3, image4],
+            images: [Sur1, Sur2, Sur3, Sur4, Sur5],
             location: 'Batu Ferringhi',
             priceRange: 'RM200 - RM250',
             rating: 5,
@@ -149,7 +146,7 @@ const Accommodations = () => {
             category: 'Villas',
             title: 'Standard Villa',
             description: 'A cozy villa with all the basic amenities for a pleasant stay.',
-            images: [image1, image2, image3, image4],
+            images: [Val1, Val2, Val3, Val4, Val5],
             location: 'Tanjung Bungah',
             priceRange: 'RM150 - RM200',
             rating: 3,
@@ -158,7 +155,7 @@ const Accommodations = () => {
             category: 'Villas',
             title: 'Luxury Villa',
             description: 'An elegant villa with premium amenities and stunning views.',
-            images: [image1, image2, image3, image4],
+            images: [Bayview1, Bayview2, Bayview3, Bayview4],
             location: 'Gurney Drive',
             priceRange: 'RM250 - RM300',
             rating: 5,
@@ -167,7 +164,7 @@ const Accommodations = () => {
             category: 'Villas',
             title: 'Budget Villa',
             description: 'An affordable villa with essential amenities for a comfortable stay.',
-            images: [image1, image2, image3, image4],
+            images: [Bayview1, Bayview2, Bayview3, Bayview4],
             location: 'Air Itam',
             priceRange: 'RM100 - RM150',
             rating: 3,
@@ -176,7 +173,7 @@ const Accommodations = () => {
             category: 'Villas',
             title: 'Family Villa',
             description: 'A spacious villa with multiple rooms, perfect for families.',
-            images: [image1, image2, image3, image4],
+            images: [Bayview1, Bayview2, Bayview3, Bayview4],
             location: 'Bayan Lepas',
             priceRange: 'RM200 - RM250',
             rating: 4,
@@ -186,7 +183,7 @@ const Accommodations = () => {
             category: 'Resorts',
             title: 'Deluxe Resort Room',
             description: 'A luxurious resort room with all the amenities you need for a comfortable stay.',
-            images: [image1, image2, image3, image4],
+            images: [Bayview1, Bayview2, Bayview3, Bayview4],
             location: 'George Town',
             priceRange: 'RM150 - RM200',
             rating: 4,
@@ -195,7 +192,7 @@ const Accommodations = () => {
             category: 'Resorts',
             title: 'Superior Resort Room',
             description: 'A spacious resort room with modern decor and comfortable furnishings.',
-            images: [image1, image2, image3, image4],
+            images: [Bayview1, Bayview2, Bayview3, Bayview4],
             location: 'Batu Ferringhi',
             priceRange: 'RM200 - RM250',
             rating: 5,
@@ -204,7 +201,7 @@ const Accommodations = () => {
             category: 'Resorts',
             title: 'Standard Resort Room',
             description: 'A cozy resort room with all the basic amenities for a pleasant stay.',
-            images: [image1, image2, image3, image4],
+            images: [Bayview1, Bayview2, Bayview3, Bayview4],
             location: 'Tanjung Bungah',
             priceRange: 'RM150 - RM200',
             rating: 3,
@@ -213,7 +210,7 @@ const Accommodations = () => {
             category: 'Resorts',
             title: 'Luxury Resort Room',
             description: 'An elegant resort room with premium amenities and stunning views.',
-            images: [image1, image2, image3, image4],
+            images: [Bayview1, Bayview2, Bayview3, Bayview4],
             location: 'Gurney Drive',
             priceRange: 'RM200 - RM250',
             rating: 5,
@@ -222,7 +219,7 @@ const Accommodations = () => {
             category: 'Resorts',
             title: 'Budget Resort Room',
             description: 'An affordable resort room with essential amenities for a comfortable stay.',
-            images: [image1, image2, image3, image4],
+            images: [Bayview1, Bayview2, Bayview3, Bayview4],
             location: 'Air Itam',
             priceRange: 'RM100 - RM150',
             rating: 3,
@@ -231,11 +228,11 @@ const Accommodations = () => {
             category: 'Resorts',
             title: 'Family Resort Room',
             description: 'A spacious resort room with multiple rooms, perfect for families.',
-            images: [image1, image2, image3, image4],
+            images: [Bayview1, Bayview2, Bayview3, Bayview4],
             location: 'Bayan Lepas',
             priceRange: 'RM150 - RM200',
             rating: 4,
-        },
+        }
     ];
 
     const filterCards = (cards) => {
@@ -338,7 +335,7 @@ const Accommodations = () => {
                 </div>
                 <div className="flex flex-col items-start ml-[310px]">
                     <div className="text-left text-3xl text-blue-950">LUXURY</div>
-                    <div className="text-left text-6xl text-blue-950">ACCOMODATIONS</div>
+                    <div className="text-left text-6xl text-blue-950">Accommodations</div>
                 </div>
                 <div className="flex flex-wrap justify-center gap-12 px-24">
                     {luxuryCards.map((card, index) => (
@@ -355,7 +352,7 @@ const Accommodations = () => {
                 </div>
                 <div className="flex flex-col items-start mt-20 ml-[310px]">
                     <div className="text-left text-3xl text-blue-950">STANDARD</div>
-                    <div className="text-left text-6xl text-blue-950">ACCOMODATIONS</div>
+                    <div className="text-left text-6xl text-blue-950">Accommodations</div>
                 </div>
                 <div className="flex flex-wrap justify-center gap-12 px-24">
                     {standardCards.map((card, index) => (
@@ -372,7 +369,7 @@ const Accommodations = () => {
                 </div>
                 <div className="flex flex-col items-start mt-20 ml-[310px]">
                     <div className="text-left text-3xl text-blue-950">BUDGET</div>
-                    <div className="text-left text-6xl text-blue-950">ACCOMODATIONS</div>
+                    <div className="text-left text-6xl text-blue-950">Accommodations</div>
                 </div>
                 <div className="flex flex-wrap justify-center gap-12 px-24">
                     {budgetCards.map((card, index) => (

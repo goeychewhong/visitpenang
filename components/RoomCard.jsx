@@ -22,8 +22,8 @@ const RoomCard = ({ images, title, description, location, priceRange, rating }) 
     };
 
     return (
-        <div className="room-card bg-white shadow-lg rounded-lg overflow-hidden w-[380px] h-[420px]">
-            <div className="relative h-[240px]">
+        <div className="room-card bg-white shadow-lg rounded-lg overflow-hidden w-[500px] h-[550px]">
+            <div className="relative h-[350px]">
                 <img
                     src={images[currentImageIndex]}
                     alt={`Room image ${currentImageIndex + 1}`}

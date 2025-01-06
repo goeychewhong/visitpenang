@@ -12,6 +12,10 @@
   display: block;
 }
 
+.room-card-images img:hover {
+  transform: scale(1.05);
+}
+
 .room-card-body {
   padding: 15px;
   background-color: rgb(255 247 237 / var(--tw-bg-opacity, 1));
