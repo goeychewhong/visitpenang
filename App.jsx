@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import './styles/styles.css';
 
@@ -20,10 +20,10 @@ function App() {
       <div className="header">
         <h1 className="title text-4xl">VISIT PENANG</h1>
         <nav className="nav text-l">
-          <Link to="#home" className="text-2xl">Home</Link>
-          <Link to="#food-and-beverages" className="text-2xl">Food and Beverages</Link>
-          <Link to="#accommodations" className="text-2xl">Accommodations</Link>
-          <Link to="#tourist-spots" className="text-2xl">Tourist</Link>
+          <a href="#home" className="text-2xl">Home</a>
+          <a href="#food-and-beverages" className="text-2xl">Food and Beverages</a>
+          <a href="#accommodations" className="text-2xl">Accommodations</a>
+          <a href="#tourist-spots" className="text-2xl">Tourist</a>
         </nav>
       </div>
       <HomePage />
@@ -38,10 +38,10 @@ function App() {
           <div className="footer-links">
             <h2 className="footer-title">Quick Links</h2>
             <nav className="footer-nav">
-              <Link to="#home">Home</Link>
-              <Link to="#tourist-spots">Tourist</Link>
-              <Link to="#food-and-beverages">Food and Beverages</Link>
-              <Link to="#accommodations">Accommodations</Link>
+              <a href="#home">Home</a>
+              <a href="#tourist-spots">Tourist</a>
+              <a href="#food-and-beverages">Food and Beverages</a>
+              <a href="#accommodations">Accommodations</a>
             </nav>
           </div>
           <div className="footer-contact">
@@ -51,6 +51,7 @@ function App() {
             <p className="footer-text">Address: Penang, Malaysia</p>
           </div>
         </div>
+        <div className="footer-bottom"></div>
       </footer>
     </div>
   );

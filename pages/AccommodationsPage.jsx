@@ -252,7 +252,7 @@ const Accommodations = () => {
         },
         {
             category: 'Apartments',
-            title: 'Penang Straits Garden Condominium Georgetown',
+            title: 'Penang Straits Garden Condominium ',
             description: 'A luxurious apartment with all the amenities you need for a comfortable stay.',
             images: [Pen1, Pen2, Pen3, Pen4, Pen5],
             location: 'George Town',
