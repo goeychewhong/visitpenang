@@ -492,46 +492,48 @@ body {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgb(255, 255, 255, 0.8);
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
   padding: 10px 20px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 20;
 }
 
 .title {
   font-size: 28px;
   font-weight: bold;
   padding: 20px 0 0 20px;
-  color: #000;
+  color: #fff;
 }
 
 .nav {
   display: flex;
   gap: 20px;
   padding: 20px 0 0 20px;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Align to the right */
   flex: 1;
 }
 
 .nav a {
   text-decoration: none;
-  color: black;
+  color: #fff;
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: #fff;
 }
 
 .nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
 }
 
 .nav a.active {
@@ -540,7 +542,7 @@ body {
 }
 
 .footer {
-  background-color: #333;
+  background: linear-gradient(90deg, #333, #555);
   color: #fff;
   padding: 40px 20px;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
@@ -559,13 +561,12 @@ body {
 .footer-description, .footer-links, .footer-contact {
   flex: 1;
   text-align: left;
-  font-size: 12px;
 }
 
 .footer-title {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: #ff7e5f;
   margin-bottom: 10px;
 }
 
@@ -582,30 +583,30 @@ body {
 
 .footer-nav a {
   text-decoration: none;
-  color: #007bff;
+  color: #feb47b;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .footer-nav a:hover {
-  color: #0056b3;
+  color: #ff7e5f;
 }
 
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
-  border-top: 1px solid #444;
+  border-top: 1px solid #666;
   padding-top: 20px;
 }
 
 .footer-bottom-text {
-  color: #ccc;
+  color: #bbb;
   font-size: 14px;
 }
 
 .star-rating {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center the stars horizontally */
   gap: 5px;
   color: gold;
   font-size: 1.5rem;
@@ -656,7 +657,6 @@ body {
   color: #4b5563;
   margin-top: 0.5rem;
 }
-
 
 /* Add responsive styles */
 @media (max-width: 768px) {
@@ -710,7 +710,6 @@ body {
     gap: 1.5rem;
   }
 }
-
 
 .page-container {
   margin: 16px; /* Adjust the margin as needed */

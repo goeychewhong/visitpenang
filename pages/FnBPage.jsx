@@ -1,13 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import foodImage1 from '../assets/Fnb/food1.jpg';
 import foodImage2 from '../assets/Fnb/food2.jpg';
 import foodImage3 from '../assets/Fnb/food3.jpg';
 import foodImage4 from '../assets/Fnb/food4.jpg';
 import foodImage5 from '../assets/Fnb/food5.jpg';
 import foodImage6 from '../assets/Fnb/food6.jpg';
-import drinkImage1 from '../assets/Fnb/drink1.jpg';
-import drinkImage2 from '../assets/Fnb/drink2.jpg';
 import '../styles/styles.css';
 import drinkImage3 from '../assets/Fnb/drink3.jpg';
 import drinkImage4 from '../assets/Fnb/drink4.jpg';
