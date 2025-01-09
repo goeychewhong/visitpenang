@@ -23,7 +23,7 @@ html {
 .tourist-spot-page {
   padding: 20px;
   min-height: 100vh;
-  background: linear-gradient(to right, #d2ffec, #4bc1a7);
+  background: linear-gradient(to right, #FBF4E2, #D8F0FA);
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ html {
   font-size: 3em;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #333;
+  color: #333333; /* Dark gray text */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   animation: fadeIn 2s ease-in-out;
 }
@@ -50,7 +50,7 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
   border: none;
   padding: 12px;
@@ -61,7 +61,7 @@ html {
 }
 
 .scroll-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   transform: translateY(-50%) scale(1.1);
 }
 
@@ -97,7 +97,7 @@ html {
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  background-color: #fff;
+  background-color: #FBFAF5;
 }
 
 .tourist-card:hover {
@@ -148,11 +148,11 @@ html {
 }
 
 .bg-gray-100 {
-  background-color: #ebf8ff;
+  background-color: #FBF4E2;
 }
 
 .bg-white {
-  background-color: #fff;
+  background-color: #FBFAF5;
 }
 
 .shadow-md {
@@ -192,7 +192,7 @@ html {
 }
 
 .text-gray-700 {
-  color: #4a5568;
+  color: #333333; /* Dark gray text */
 }
 
 .mb-6 {
@@ -208,11 +208,11 @@ html {
 }
 
 .bg-orange-500 {
-  background-color: #ed8936;
+  background-color: #D8F0FA;
 }
 
 .hover\:bg-red-500:hover {
-  background-color: #f56565;
+  background-color: #C0E4F5;
 }
 
 .text-white {
@@ -314,12 +314,11 @@ html {
 }
 
 .bg-gradient-to-t {
-  background: linear-gradient(to top, var(--tw-gradient-stops));
+  background: linear-gradient(to top, #FBF4E2, #D8F0FA);
 }
 
 .from-black {
-  --tw-gradient-from: #000;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  --tw-gradient-from: #333333;
 }
 
 .to-transparent {
@@ -335,7 +334,7 @@ html {
 }
 
 .bggradient{
-  background: rgb(255 247 237 / var(--tw-bg-opacity, 1));
+  background: #FBF4E2;
 }
 
 .flowpane {
@@ -346,7 +345,7 @@ html {
   overflow: hidden;
   scroll-behavior: smooth;
   padding: 20px;
-  background: rgb(255 247 237 / var(--tw-bg-opacity, 1));
+  background: #FBF4E2;
   border-radius: 20px;
 }
 
@@ -369,7 +368,7 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
   border: none;
   padding: 12px;
@@ -380,7 +379,7 @@ html {
 }
 
 .scroll-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   transform: translateY(-50%) scale(1.1);
 }
 
@@ -438,9 +437,10 @@ html {
 }
 
 body {
-  background-color: rgb(255 247 237 / var(--tw-bg-opacity, 1));
+  background-color: #FBFAF5;
   margin: 0;
   padding: 0;
+  color: #333333; /* Dark gray text */
 }
 
 .logo {
@@ -496,7 +496,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  background: linear-gradient(90deg, #D8F0FA, #FBF4E2);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: absolute;
   width: 100%;
@@ -526,14 +526,14 @@ body {
   padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
-  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  /* background: linear-gradient(90deg, #ff7e5f, #feb47b); */
   color: #fff;
 }
 
 .nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
-  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  /* background: linear-gradient(90deg, #feb47b, #ff7e5f); */
 }
 
 .nav a.active {
@@ -542,7 +542,7 @@ body {
 }
 
 .footer {
-  background: linear-gradient(90deg, #333, #555);
+  background: linear-gradient(90deg, #FBF4E2, #D8F0FA);
   color: #fff;
   padding: 40px 20px;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
@@ -566,12 +566,12 @@ body {
 .footer-title {
   font-size: 24px;
   font-weight: bold;
-  color: #ff7e5f;
+  color: #333333; /* Dark gray text */
   margin-bottom: 10px;
 }
 
 .footer-text {
-  color: #ccc;
+  color: #666666; /* Dark gray text */
   margin-bottom: 10px;
 }
 
@@ -583,13 +583,13 @@ body {
 
 .footer-nav a {
   text-decoration: none;
-  color: #feb47b;
+  color: #333333; /* Dark gray text */
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .footer-nav a:hover {
-  color: #ff7e5f;
+  color: #666666; /* Dark gray text */
 }
 
 .footer-bottom {

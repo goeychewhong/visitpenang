@@ -21,7 +21,7 @@ function TouristSpotPage() {
 
   return (
     <>
-      <div className="bg-orange-50">
+      <div className="bg-FBFAF5">
         <h1 className="page-title pt-20">TOP VACATION DESTINATION</h1>
         <div className="carousel w-full h-96 overflow-hidden">
           <div className="carousel-item relative w-full h-full">

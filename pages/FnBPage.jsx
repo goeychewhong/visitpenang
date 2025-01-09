@@ -36,19 +36,19 @@ function FnBPage() {
   const flowpaneRef3 = React.useRef(null);
 
   return (
-    <div className="min-h-screen bg-peach-100 flex flex-col items-center justify-center p-6">
+    <div className="min-h-screen bg-FBFAF5 flex flex-col items-center justify-center p-6">
       <video className="w-full h-72 object-cover mb-6 mt-24" autoPlay loop muted>
         <source src={bannerVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video> {/* Add the banner video */}
-      <div className="w-full bg-orange-50 shadow-2xl rounded-lg p-8">
-        <h1 className="text-4xl font-extrabold mb-6 text-left text-yellow-700">Food and Beverages</h1>
-        <p className="text-2xl text-gray-800 mb-8 text-justify font-mountainsChristmas">
+      <div className="w-full bg-FBF4E2 shadow-2xl rounded-lg p-8">
+        <h1 className="text-4xl font-extrabold mb-6 text-left text-gray-900">Food and Beverages</h1>
+        <p className="text-2xl text-gray-700 mb-8 text-justify font-mountainsChristmas">
           Indulge in the diverse and delicious food scene in Penang. From street food to fine dining, there's something for everyone.           Penang is a food lover’s paradise, offering a rich blend of flavors from its diverse cultures. The island’s culinary scene is a vibrant mix of unique dishes that reflect its Malay, Chinese, and Indian influences, making it a must-visit destination for food enthusiasts.
         </p>
 
         <h2 className="text-4xl mb-8 mt-15 text-center font-bold text-yellow-700 font-barriecito">Food You Must Try in Penang</h2>
-        <div className="section bg-orange-200 p-4 rounded-2xl shadow-2xl text-left">
+        <div className="section bg-FBF4E2 p-4 rounded-2xl shadow-2xl text-left">
           <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-yellow-900">Foods</h2>
           <p className="text-yellow-900 pl-6 text-xl">Indulge in the diverse and delicious food scene, from street food to fine dining.</p>
           <div className="relative">
@@ -149,7 +149,7 @@ function FnBPage() {
             <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef1)}>&gt;</button>
           </div>
         </div>
-        <div className="section bg-yellow-800 p-4 rounded-2xl shadow-2xl text-left">
+        <div className="section bg-D8F0FA p-4 rounded-2xl shadow-2xl text-left">
           <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-yellow-100">Desserts</h2>
           <p className="text-yellow-100 pl-6 text-xl">Explore more delicious dessert options in Penang.</p>
           <div className="relative">
@@ -249,7 +249,7 @@ function FnBPage() {
             <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef2)}>&gt;</button>
           </div>
         </div>
-        <div className="section bg-orange-200  p-4 rounded-2xl shadow-2xl text-left">
+        <div className="section bg-FBF4E2 p-4 rounded-2xl shadow-2xl text-left">
           <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-yellow-900">Drinks</h2>
           <p className="text-yellow-900 pl-6 text-xl">Explore a variety of refreshing drinks in Penang.</p>
           <div className="relative">
@@ -320,8 +320,8 @@ function FnBPage() {
             <button className="scroll-button right" onClick={() => scrollRight(flowpaneRef3)}>&gt;</button>
           </div>
         </div>
-        <h2 className="text-4xl mt-12 text-center font-bold text-yellow-700 font-barriecito">Penang Special</h2>
-        <p className="text-xl text-gray-800 mb-8 text-center font-mountainsChristmas">
+        <h2 className="text-4xl mt-12 text-center font-bold text-gray-900 font-barriecito">Penang Special</h2>
+        <p className="text-xl text-gray-700 mb-8 text-center font-mountainsChristmas">
           Discover the unique and special dishes that Penang has to offer. These are the must-try foods that you can't miss!
         </p>
         <div className="flex flex-col items-center gap-6">

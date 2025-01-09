@@ -12,9 +12,9 @@ function Card({ imageSrc, imageName, imageDescription }) {
         >
             <img src={imageSrc} alt={imageName} className="card-image" />
             <div className={`overlay ${isHovered ? 'hovered' : ''}`}>
-                <h2 className="card-title">{imageName}</h2>
+                <h2 className="card-title text-gray-900">{imageName}</h2>
                 {isHovered && (
-                    <p className="card-description">
+                    <p className="card-description text-gray-700">
                         {imageDescription}
                     </p>
                 )}
