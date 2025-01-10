@@ -12,7 +12,7 @@ const FoodCard = ({ image, title, rating, description }) => {
           </div>
         </div>
         <div className="food-card-back">
-          <div className="food-card-description bg-light rounded-lg shadow-lg w-full h-full p-4">
+          <div className="food-card-details bg-light rounded-lg shadow-lg w-full h-full p-4">
             <span className="text-xl font-bold text-center block">{title}</span>
             <div className="flex justify-center mt-2">
               <StarRating rating={rating} /> {/* Add star rating */}

@@ -48,25 +48,7 @@
   object-fit: cover;
 }
 
-.food-card-title-rating {
-  background-color: #f9f9f9; /* Light theme background color */
-  padding: 1rem;
-  text-align: center;
-}
-
-.food-card-title-rating span {
-  display: block;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.food-card-title-rating .star-rating {
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5rem;
-}
-
-.food-card-description {
+.food-card-details {
   padding: 1rem;
   text-align: justify;
   display: flex;
@@ -74,4 +56,8 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.food-card-details p {
+  margin: 0; /* Remove gap between paragraphs */
 }
