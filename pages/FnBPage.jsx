@@ -59,7 +59,7 @@ function FnBPage() {
           <source src={bannerVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="section bg-FBF4E2 p-4 rounded-2xl shadow-2xl text-left">
+        <div className="section p-4 rounded-2xl shadow-2xl text-left">
           <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-gray-900">
             Foods
           </h2>
@@ -79,13 +79,13 @@ function FnBPage() {
                 image={foodImage1}
                 title="Curry Noodle"
                 rating={4}
-                description="Penang curry noodles are a spicy, coconut-based noodle soup topped with prawns, cockles, tofu puffs, and sambal, offering a rich and flavorful taste."
+                description="Penang curry noodles are a spicy, coconut-based noodle soup topped with prawns, cockles, tofu puffs, offering a rich and flavorful taste."
               />
               <FoodCard
                 image={foodImage2}
                 title="Char Kuey Teow"
                 rating={5}
-                description="Char Kuey Teow is a smoky, stir-fried flat rice noodle dish from Penang, cooked with prawns, cockles, egg, bean sprouts, and Chinese chives in a savory soy sauce."
+                description="Char Kuey Teow is a smoky, stir-fried flat rice noodle dish, cooked with prawns, egg, bean sprouts, and Chinese chives in a savory soy sauce."
               />
               <FoodCard
                 image={foodImage3}
@@ -109,7 +109,7 @@ function FnBPage() {
                 image={foodImage6}
                 title="Asam Laksa"
                 rating={5}
-                description="A tangy and spicy noodle soup, it features thick rice noodles in a flavorful tamarind-based broth. The bold, sour, and slightly spicy taste makes it a beloved dish in Penang."
+                description="A tangy and spicy noodle soup. The bold, sour, and slightly spicy taste makes it a beloved dish in Penang."
               />
             </div>
             <button
@@ -151,19 +151,19 @@ function FnBPage() {
                 image={dessertImage3}
                 title="Bubur Cha Cha"
                 rating={4}
-                description="A popular Malaysian dessert made with coconut milk, sweet potato, yam, and sago pearls. It's a warm, comforting treat with a mix of textures and natural sweetness."
+                description="A popular Malaysian dessert made with coconut milk, sweet potato and sago pearls. It's a mix of textures and natural sweetness."
               />
               <FoodCard
                 image={dessertImage4}
                 title="Tong Sui"
                 rating={5}
-                description="A traditional Chinese dessert often served warm or chilled. It consists of a variety of sweet ingredients like black sesame, red beans, lotus seeds, or mung beans, flavored with rock sugar."
+                description="A traditional dessert often served warm or chilled. It consists sweet ingredients like black sesame, red beans, lotus seeds or mung beans."
               />
               <FoodCard
                 image={dessertImage5}
                 title="Tau Hua"
                 rating={4}
-                description="A silky smooth tofu pudding served with sweet syrup, often flavored with gula melaka or simple sugar syrup. This dessert is popular in Penang and can be served warm or cold."
+                description="A smooth tofu pudding served with sweet syrup, often flavored with gula melaka or simple sugar syrup."
               />
               <FoodCard
                 image={dessertImage6}
@@ -188,30 +188,24 @@ function FnBPage() {
             Explore a variety of refreshing drinks in Penang.
           </p>
           <div className="relative">
-            <button
-              className="scroll-button left"
-              onClick={() => scrollLeft(flowpaneRef3)}
-            >
-              &lt;
-            </button>
             <div className="flowpane p-6" ref={flowpaneRef3}>
               <FoodCard
                 image={drinkImage3}
                 title="Penang Black Coffee"
                 rating={4}
-                description="A strong and aromatic local coffee brewed using traditional methods. It is typically served black, with a rich, bold flavor and a smooth finish."
+                description="A local coffee using traditional methods. It is typically served black, with a rich, bold flavor and a smooth finish."
               />
               <FoodCard
                 image={drinkImage4}
                 title="Penang White Coffee"
                 rating={5}
-                description="A smooth and creamy coffee made from beans roasted at a lower temperature, giving it a milder and less bitter taste compared to traditional black coffee typically served with condensed milk."
+                description="A coffee made from beans roasted at a lower temperature, giving it a milder taste compared to black coffee."
               />
               <FoodCard
                 image={drinkImage5}
                 title="Sugar Cane Juice"
                 rating={4}
-                description="A refreshing, naturally sweet drink made by extracting juice from fresh sugar cane stalks. Often served chilled with a splash of lime or lemon."
+                description="A refreshing drink made by fresh sugar cane stalks. Often served chilled with a splash of lime or lemon."
               />
               <FoodCard
                 image={drinkImage6}
@@ -220,83 +214,72 @@ function FnBPage() {
                 description="Blended coconut water, flesh, and ice, served with a scoop of ice cream for a tropical treat."
               />
             </div>
-            <button
-              className="scroll-button right"
-              onClick={() => scrollRight(flowpaneRef3)}
-            >
-              &gt;
-            </button>
           </div>
         </div>
-        <h2 className="text-4xl mt-12 text-center font-bold text-gray-900 font-barriecito">
+        <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-gray-900">
           Penang Special
         </h2>
         <p className="text-xl text-gray-700 mb-8 text-center font-mountainsChristmas">
           Discover the unique and special dishes that Penang has to offer. These
           are the must-try foods that you can't miss!
         </p>
-        <div className="flex flex-col items-center gap-6 p-4 rounded-2xl shadow-2xl">
-          <div className="relative overflow-hidden rounded-lg shadow-lg flex w-full h-auto bg-fbf4e2">
-            <div className="w-1/2 h-full flex-shrink-0">
+        <div className="flex flex-col items-center gap-6 p-4 rounded-2xl shadow-2xl bg-fbf4e2">
+          <div className="relative bg-white text-white p-8 rounded-2xl shadow-lg">
+            {/* Image Section */}
+            <div className="mt-6 sm:mt-0 md:mt-0 lg:absolute lg:top-[-40px] lg:right-[-20px] lg:w-1/2">
               <img
                 src={hawkerImage1}
                 alt="New Lane Hawker Centre"
-                className="w-96 h-full object-cover rounded-3xl mb-5 mt-5 ml-10 bg-opacity-75"
+                className="rounded-lg shadow-2xl max-w-full h-96"
               />
             </div>
-            <div className="flex flex-col justify-center text-justify p-6 w-1/2">
-              <span className="absolute top-0 right-0 text-3xl font-bold text-gray-900 font-playfair p-4 bg-opacity-75">
+            {/* Text Section */}
+            <div className="relative z-10 bg-white p-6 w-full lg:w-1/2 rounded-lg text-center lg:text-left">
+              <h1 className="text-4xl text-black font-semibold mb-4">
                 New Lane Hawker Centre
-              </span>
-              <p className="absolute bottom-10 text-lg mt-2 mr-10 text-black font-merriweather">
-                At 4 pm, Georgetown’s Lorong Baru becomes New Lane Hawker
-                Centre, serving street food like char kway teow, chee cheong
-                fun, and congee—a hearty Chinese rice porridge with toppings
-                like crab or pork. Diners enjoy their meals at colorful roadside
-                tables.
+              </h1>
+              <p className="text-lg text-black leading-relaxed">
+                At 4 pm, Georgetown’s Lorong Baru becomes New Lane Hawker Centre, serving street food like char kway teow, chee cheong fun, and congee—a hearty Chinese rice porridge with toppings like crab or pork. Diners enjoy their meals at colorful roadside tables.
               </p>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg shadow-lg flex w-full h-auto bg-fbf4e2">
-            <div className="flex flex-col justify-center text-justify p-6 w-1/2">
-              <span className="absolute top-0 left-0 text-3xl font-bold text-gray-900 font-playfair p-4 bg-opacity-75">
-                Gurney Drive Hawker Centre
-              </span>
-              <p className="absolute bottom-8 text-lg mt-2 ml-10 mr-14 text-black font-merriweather">
-                Gurney Drive Hawker Centre, next to Gurney Plaza Mall, offers a
-                wide variety of Penang street food. Don’t miss the delicious
-                char koay kak (stir-fried radish with bean sprouts, chili, egg,
-                and pork lard) or the barbecue station, especially the beef
-                meatballs. Seating is tight, so secure a spot before ordering by
-                waiting for diners to finish.
-              </p>
-            </div>
-            <div className="w-1/2 h-full flex-shrink-0">
+          {/* Gurney Drive Hawker Centre Section */}
+          <div className="relative mt-14 bg-white text-black p-8 rounded-2xl shadow-lg">
+            {/* Image Section */}
+            <div className="mt-6 sm:mt-0 md:mt-0 lg:absolute lg:top-[-40px] lg:left-[-20px] lg:w-1/2">
               <img
                 src={hawkerImage2}
                 alt="Gurney Drive Hawker Centre"
-                className="w-96 h-full object-cover rounded-3xl mb-5 mt-5 ml-20"
+                className="sm:ml-0 md:ml-0 lg:ml-20 rounded-lg shadow-2xl max-w-full h-96"
               />
             </div>
+            {/* Text Section */}
+            <div className="relative z-10 bg-white p-6 w-full lg:w-1/2 rounded-lg text-center lg:text-left lg:ml-auto">
+              <h1 className="text-4xl font-semibold mb-4">
+                Gurney Drive Hawker Centre
+              </h1>
+              <p className="text-lg leading-relaxed">
+                Gurney Drive Hawker Centre, next to Gurney Plaza Mall, offers a wide variety of Penang street food. Don’t miss the delicious char koay kak (stir-fried radish with bean sprouts, chili, egg, and pork lard) or the barbecue station, especially the beef meatballs. Seating is tight, so secure a spot before ordering by waiting for diners to finish.
+              </p>
+            </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg shadow-lg flex w-full h-auto bg-fbf4e2">
-            <div className="w-1/2 h-full flex-shrink-0">
+          {/* Other sections remain unchanged */}
+          <div className="relative mt-14 bg-white text-black p-8 rounded-2xl shadow-lg">
+            {/* Image Section */}
+            <div className="mt-6 sm:mt-0 md:mt-0 lg:absolute lg:top-[-40px] lg:right-[-20px] lg:w-1/2">
               <img
                 src={hawkerImage3}
                 alt="New World Park Hawker Centre"
-                className="w-96 h-full object-cover rounded-3xl mb-5 mt-5 ml-10 bg-opacity-75"
+                className="rounded-lg shadow-2xl sm:w-full md:w-full lg:w-10/12 h-96"
               />
             </div>
-            <div className="flex flex-col justify-center text-justify p-6 w-1/2">
-              <span className="absolute top-0 right-0 text-3xl font-bold text-gray-900 font-playfair p-4 bg-opacity-75">
+            {/* Text Section */}
+            <div className="relative z-10 bg-white p-6 w-full lg:w-1/2 rounded-lg text-center lg:text-left">
+              <h1 className="text-4xl font-semibold mb-4">
                 New World Park Hawker Centre
-              </span>
-              <p className="absolute bottom-4 text-lg mt-2 mr-8 ml-10 text-black font-merriweather">
-                New World Park, one of Penang’s largest hawker centres, is
-                centrally located in Georgetown and offers a wide range of local
-                and international cuisine. Parking is available for a few
-                ringgits. Prices are affordable, and dishes include laksa, char koay teow, Indian food, Chinese food, and traditional
-                Malaysian fare. Unique options like dim sum are also available.
+              </h1>
+              <p className="text-lg leading-relaxed">
+                New World Park, one of Penang’s largest hawker centres, is centrally located in Georgetown and offers a wide range of local and international cuisine. Parking is available for a few ringgits. Prices are affordable, and dishes include laksa, char koay teow, Indian food, Chinese food, and traditional Malaysian fare. Unique options like dim sum are also available.
               </p>
             </div>
           </div>
