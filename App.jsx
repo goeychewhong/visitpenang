@@ -1,7 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import ProjectIcon from './assets/Home/ProjectIcon.svg';
 import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import './styles/styles.css';
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -13,11 +15,20 @@ function ScrollToTop() {
 }
 
 function App() {
+  const [isTitleVisible, setIsTitleVisible] = useState(false);
+
+  const handleIconClick = () => {
+    setIsTitleVisible(prevState => !prevState);
+  };
+
   return (
     <div>
       <ScrollToTop />
-      <div className="header bg-FBF4E2">
-        <h1 className="title text-4xl text-gray-900">VISIT PENANG</h1>
+      <div className="header">
+        <div className="icon-container flex items-center justify-center" onClick={handleIconClick}>
+          <img src={ProjectIcon} alt="Project Icon" className="w-20 h-20 mr-2" />
+          <h1 className={`title text-4xl ${isTitleVisible ? 'visible' : ''}`}>VISIT PENANG</h1>
+        </div>
         <nav className="nav text-l">
           <a href="#home" className="text-2xl text-gray-900">Home</a>
           <a href="#food-and-beverages" className="text-2xl text-gray-900">Food and Beverages</a>

@@ -129,8 +129,8 @@ const Accommodations = () => {
             title: 'Eastern And Oriental Hotel',
             description: 'A spacious hotel room with modern decor and comfortable furnishings.',
             images: [Eastern1, Eastern2, Eastern3, Eastern4, Eastern5],
-            location: 'Batu Ferringhi',
-            priceRange: 'RM120 - RM170',
+            location: 'George Town',
+            priceRange: 'RM1000 - RM1500',
             rating: 5,
         },
         {
@@ -138,8 +138,8 @@ const Accommodations = () => {
             title: 'G Hotel Gurney',
             description: 'A cozy hotel room with all the basic amenities for a pleasant stay.',
             images: [G1, G2, G3, G4, G5],
-            location: 'Tanjung Bungah',
-            priceRange: 'RM80 - RM130',
+            location: 'George Town',
+            priceRange: 'RM500 - RM700',
             rating: 3,
         },
         {
@@ -147,8 +147,8 @@ const Accommodations = () => {
             title: 'Jazz Hotel Penang',
             description: 'A modern hotel room with stunning views and excellent facilities.',
             images: [Jaz1, Jaz2, Jaz3, Jaz4, Jaz5],
-            location: 'Butterworth',
-            priceRange: 'RM150 - RM200',
+            location: 'George Town',
+            priceRange: 'RM200 - RM500',
             rating: 4,
         },
         {
@@ -157,7 +157,7 @@ const Accommodations = () => {
             description: 'An elegant hotel room with premium amenities and stunning views.',
             images: [Gur1, Gur2, Gur3, Gur4, Gur5],
             location: 'Gurney Drive',
-            priceRange: 'RM150 - RM200',
+            priceRange: 'RM300 - RM600',
             rating: 5,
         },
         {
@@ -165,35 +165,35 @@ const Accommodations = () => {
             title: 'Hard Rock Hotel Penang',
             description: 'An affordable hotel room with essential amenities for a comfortable stay.',
             images: [Hard1, Hard2, Hard3, Hard4, Hard5],
-            location: 'Air Itam',
-            priceRange: 'RM50 - RM100',
+            location: 'Batu Ferringhi',
+            priceRange: 'RM600 - RM800',
             rating: 3,
         },
         {
-            category: 'Hotels',
+            category: 'Resorts',
             title: 'PARKROYAL Penang Resort',
             description: 'A spacious hotel room with multiple rooms, perfect for families.',
             images: [Park1, Park2, Park3, Park4],
-            location: 'Bayan Lepas',
-            priceRange: 'RM100 - RM150',
+            location: 'Batu Ferringhi',
+            priceRange: 'RM550 - RM1000',
             rating: 4,
         },
         {
-            category: 'Hotels',
-            title: 'Shangri-La Golden Sands, Penang',
-            description: 'A luxurious Homestay with all the amenities you need for a comfortable stay.',
+            category: 'Resorts',
+            title: 'Shangri-La Golden Sands Resort',
+            description: 'A luxurious resort with the amenities you need for a comfortable stay.',
             images: [Shang1, Shang2, Shang3, Shang4, Shang5],
-            location: 'George Town',
-            priceRange: 'RM200 - RM250',
+            location: 'Batu Ferringhi',
+            priceRange: 'RM550 - RM800',
             rating: 4,
         },
         {
             category: 'Homestay',
-            title: 'Surprised Homestay Butterworth',
+            title: 'Surprised Homestay',
             description: 'A spacious Homestay with modern decor and comfortable furnishings.',
             images: [Sur1, Sur2, Sur3, Sur4, Sur5],
-            location: 'Batu Ferringhi',
-            priceRange: 'RM200 - RM250',
+            location: 'Butterworth',
+            priceRange: 'RM80 - RM150',
             rating: 5,
         },
         {
@@ -201,8 +201,8 @@ const Accommodations = () => {
             title: 'Value Inn Homestay',
             description: 'A cozy Homestay with all the basic amenities for a pleasant stay.',
             images: [Val1, Val2, Val3, Val4, Val5],
-            location: 'Tanjung Bungah',
-            priceRange: 'RM150 - RM200',
+            location: 'Butterworth',
+            priceRange: 'RM100 - RM150',
             rating: 3,
         },
         {
@@ -210,17 +210,17 @@ const Accommodations = () => {
             title: 'Three Homestay',
             description: 'A modern Homestay with stunning views and excellent facilities.',
             images: [TH1, TH2, TH3, TH4, TH5],
-            location: 'Butterworth',
-            priceRange: 'RM80 - RM130',
+            location: 'Gelugor',
+            priceRange: 'RM100 - RM130',
             rating: 4,
         },
         {
             category: 'Resorts',
-            title: 'Bayview beach Resort',
-            description: 'A luxurious apartment with all the amenities you need for a comfortable stay.',
+            title: 'Bayview Beach Resort',
+            description: 'A luxurious apartment with the amenities you need for a comfortable stay.',
             images: [Bayview1, Bayview2, Bayview3, Bayview4, Bayview5],
-            location: 'George Town',
-            priceRange: 'RM100 - RM150',
+            location: 'Batu Ferringhi',
+            priceRange: 'RM300 - RM500',
             rating: 4,
         },
         {
@@ -228,53 +228,53 @@ const Accommodations = () => {
             title: 'Aayu Stewart Resort',
             description: 'A beautiful resort with stunning views and luxurious amenities.',
             images: [Aayu1, Aayu2, Aayu3, Aayu4, Aayu5],
-            location: 'Batu Ferringhi',
-            priceRange: 'RM180 - RM230',
+            location: 'George Town',
+            priceRange: 'RM160 - RM200',
             rating: 4,
         },
         {
             category: 'Resorts',
-            title: 'DoubleTree Resort by Hilton Hotel Penang',
+            title: 'DoubleTree Resort',
             description: 'A modern resort with excellent facilities and services.',
             images: [Dou1, Dou2, Dou3, Dou4, Dou5],
-            location: 'Tanjung Bungah',
-            priceRange: 'RM200 - RM250',
+            location: 'Batu Ferringhi',
+            priceRange: 'RM350 - RM500',
             rating: 5,
         },
         {
             category: 'Resorts',
-            title: 'J Beach Suites At Paradise Resort',
+            title: 'J Beach Suites Resort',
             description: 'A cozy resort with all the amenities for a relaxing stay.',
             images: [JBe1, JBe2, JBe3, JBe4, JBe5],
-            location: 'Gurney Drive',
-            priceRange: 'RM150 - RM200',
+            location: 'Tanjung Bungah',
+            priceRange: 'RM90 - RM120',
             rating: 4,
         },
         {
             category: 'Apartments',
-            title: 'Penang Straits Garden Condominium ',
-            description: 'A luxurious apartment with all the amenities you need for a comfortable stay.',
+            title: 'Straits Garden Apartment ',
+            description: 'A luxurious apartment with the amenities you need for a comfortable stay.',
             images: [Pen1, Pen2, Pen3, Pen4, Pen5],
             location: 'George Town',
-            priceRange: 'RM100 - RM150',
+            priceRange: 'RM60 - RM100',
             rating: 4,
         },
         {
             category: 'Apartments',
-            title: 'THE VIEW',
+            title: 'The View Apartment',
             description: 'A modern apartment with stunning views and excellent facilities.',
             images: [THE1, THE2, THE3, THE4, THE5],
-            location: 'Bayan Lepas',
-            priceRange: 'RM120 - RM170',
+            location: 'Batu Ferringhi',
+            priceRange: 'RM250 - RM500',
             rating: 5,
         },
         {
             category: 'Apartments',
-            title: 'Woodsburry Butterworth Penang',
+            title: 'Woodsburry Apartment',
             description: 'A cozy apartment with all the basic amenities for a pleasant stay.',
             images: [Woo1, Woo2, Woo3, Woo4, Woo5],
             location: 'Butterworth',
-            priceRange: 'RM80 - RM130',
+            priceRange: 'RM350 - RM700',
             rating: 3,
         },
         
@@ -301,172 +301,170 @@ const Accommodations = () => {
     const hotelCards = filterCards(cards.filter(card => card.title.includes('Hotel') || card.title.includes('Luxury')));
     const resortCards = filterCards(cards.filter(card => card.title.includes('Resort')));
     const homestayCards = filterCards(cards.filter(card => card.title.includes('Homestay')));
-    const apartmentCards = filterCards(cards.filter(card => card.category === 'Apartments'));
+    const apartmentCards = filterCards(cards.filter(card => card.title.includes('Apartment')));
 
-    return (
-        <>
-            <div className="bg-orange-50 p-6 pt-24">
-                <h1 className="text-left text-4xl font-bold mb-4 pl-24 text-black">Accommodations in Penang</h1>
-                <p className="text-justify text-gray-800 mb-6 pl-24 text-2xl">Discover the best resorts and hotels around Penang for a perfect stay.</p>
-                <div className="flex justify-end mb-4">
-                    <div className="flex items-center gap-2">
-                        <div className="flex flex-wrap gap-2">
-                            {categories.map((category) => (
-                                <button
-                                    key={category}
-                                    onClick={() => setSelectedCategory(category)}
-                                    className={`p-2 rounded text-xl transition-colors duration-700 ${selectedCategory === category ? 'text-blue-950' : 'text-yellow-600'}`}
-                                >
-                                    {category}
-                                </button>
-                            ))}
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <button
-                                onClick={() => setShowPriceRange(!showPriceRange)}
-                                className="p-2 border border-gray-300 rounded bg-blue-950 text-white"
-                            >
-                                Price Range
-                            </button>
-                            <div className={`transition-opacity duration-500 ${showPriceRange ? 'opacity-100' : 'opacity-0'}`}>
-                                {showPriceRange && (
-                                    <div className="flex items-center gap-2">
-                                        <input
-                                            type="number"
-                                            placeholder="Min Price"
-                                            value={priceRange.min}
-                                            onChange={(e) => setPriceRange({ ...priceRange, min: e.target.value })}
-                                            className="p-2 border border-gray-300 rounded"
-                                        />
-                                        <input
-                                            type="number"
-                                            placeholder="Max Price"
-                                            value={priceRange.max}
-                                            onChange={(e) => setPriceRange({ ...priceRange, max: e.target.value })}
-                                            className="p-2 border border-gray-300 rounded"
-                                        />
-                                    </div>
-                                )}
+return (
+    <>
+        <div className="bg-white p-6 pt-24">
+            <h1 className="text-left text-4xl font-bold mb-4 pl-6 md:pl-24 text-black">Accommodations in Penang</h1>
+            <p className="text-justify text-gray-800 mb-6 pl-6 md:pl-24 text-xl md:text-2xl">Discover the best resorts and hotels around Penang for a perfect stay.</p>
+            <div className="flex flex-col md:flex-row justify-end mb-4">
+                <div className="flex flex-wrap items-center gap-2">
+                    {categories.map((category) => (
+                        <button
+                            key={category}
+                            onClick={() => setSelectedCategory(category)}
+                            className={`p-2 rounded text-lg md:text-xl transition-colors duration-700 ${selectedCategory === category ? 'text-blue-950' : 'text-yellow-600'}`}
+                        >
+                            {category}
+                        </button>
+                    ))}
+                </div>
+                <div className="flex flex-wrap items-center gap-2 mt-2 md:mt-0">
+                    <button
+                        onClick={() => setShowPriceRange(!showPriceRange)}
+                        className="p-2 border border-gray-300 rounded bg-blue-950 text-white"
+                    >
+                        Price Range
+                    </button>
+                    <div className={`transition-opacity duration-500 ${showPriceRange ? 'opacity-100' : 'opacity-0'}`}>
+                        {showPriceRange && (
+                            <div className="flex items-center gap-2">
+                                <input
+                                    type="number"
+                                    placeholder="Min Price"
+                                    value={priceRange.min}
+                                    onChange={(e) => setPriceRange({ ...priceRange, min: e.target.value })}
+                                    className="p-2 border border-gray-300 rounded"
+                                />
+                                <input
+                                    type="number"
+                                    placeholder="Max Price"
+                                    value={priceRange.max}
+                                    onChange={(e) => setPriceRange({ ...priceRange, max: e.target.value })}
+                                    className="p-2 border border-gray-300 rounded"
+                                />
                             </div>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <button
-                                onClick={() => setShowRatingRange(!showRatingRange)}
-                                className="p-2 border border-gray-300 rounded bg-blue-950 text-white"
-                            >
-                                Rating
-                            </button>
-                            <div className={`transition-opacity duration-500 ${showRatingRange ? 'opacity-100' : 'opacity-0'}`}>
-                                {showRatingRange && (
-                                    <div className="flex items-center gap-2">
-                                        <input
-                                            type="number"
-                                            placeholder="Min Rating"
-                                            value={ratingRange.min}
-                                            onChange={(e) => setRatingRange({ ...ratingRange, min: e.target.value })}
-                                            className="p-2 border border-gray-300 rounded"
-                                        />
-                                        <input
-                                            type="number"
-                                            placeholder="Max Rating"
-                                            value={ratingRange.max}
-                                            onChange={(e) => setRatingRange({ ...ratingRange, max: e.target.value })}
-                                            className="p-2 border border-gray-300 rounded"
-                                        />
-                                    </div>
-                                )}
-                            </div>
-                        </div>
+                        )}
                     </div>
                 </div>
-                {selectedCategory === 'All' || selectedCategory === 'Hotels' ? (
-                    <>
-                        <div className="flex flex-col items-start pl-28">
-                            <div className="text-left text-4xl text-blue-950">Urban</div>
-                            <div className="text-left text-6xl text-blue-950">Hotels</div>
-                        </div>
-                        <div className="flex flex-wrap justify-center gap-12 px-24 py-4">
-                            {hotelCards.map((card, index) => (
-                                <RoomCard
-                                    key={index}
-                                    images={card.images}
-                                    title={card.title}
-                                    description={card.description}
-                                    location={card.location}
-                                    priceRange={card.priceRange}
-                                    rating={card.rating}
+                <div className="flex flex-wrap items-center gap-2 mt-2 md:mt-0">
+                    <button
+                        onClick={() => setShowRatingRange(!showRatingRange)}
+                        className="p-2 border border-gray-300 rounded bg-blue-950 text-white"
+                    >
+                        Rating
+                    </button>
+                    <div className={`transition-opacity duration-500 ${showRatingRange ? 'opacity-100' : 'opacity-0'}`}>
+                        {showRatingRange && (
+                            <div className="flex items-center gap-2">
+                                <input
+                                    type="number"
+                                    placeholder="Min Rating"
+                                    value={ratingRange.min}
+                                    onChange={(e) => setRatingRange({ ...ratingRange, min: e.target.value })}
+                                    className="p-2 border border-gray-300 rounded"
                                 />
-                            ))}
-                        </div>
-                    </>
-                ) : null}
-                {selectedCategory === 'All' || selectedCategory === 'Resorts' ? (
-                    <>
-                        <div className="flex flex-col items-start mt-12 pl-28">
-                            <div className="text-left text-4xl text-blue-950">Charming</div>
-                            <div className="text-left text-6xl text-blue-950">Resorts</div>
-                        </div>
-                        <div className="flex flex-wrap justify-center gap-12 px-24 py-4">
-                            {resortCards.map((card, index) => (
-                                <RoomCard
-                                    key={index}
-                                    images={card.images}
-                                    title={card.title}
-                                    description={card.description}
-                                    location={card.location}
-                                    priceRange={card.priceRange}
-                                    rating={card.rating}
+                                <input
+                                    type="number"
+                                    placeholder="Max Rating"
+                                    value={ratingRange.max}
+                                    onChange={(e) => setRatingRange({ ...ratingRange, max: e.target.value })}
+                                    className="p-2 border border-gray-300 rounded"
                                 />
-                            ))}
-                        </div>
-                    </>
-                ) : null}
-                {selectedCategory === 'All' || selectedCategory === 'Homestay' ? (
-                    <>
-                        <div className="flex flex-col items-start mt-12 pl-28">
-                            <div className="text-left text-4xl text-blue-950">Cozy</div>
-                            <div className="text-left text-6xl text-blue-950">Homestays</div>
-                        </div>
-                        <div className="flex flex-wrap justify-center gap-12 px-24 py-4">
-                            {homestayCards.map((card, index) => (
-                                <RoomCard
-                                    key={index}
-                                    images={card.images}
-                                    title={card.title}
-                                    description={card.description}
-                                    location={card.location}
-                                    priceRange={card.priceRange}
-                                    rating={card.rating}
-                                />
-                            ))}
-                        </div>
-                    </>
-
-                ) : null}
-                {selectedCategory === 'All' || selectedCategory === 'Apartments' ? (
-                    <>
-                        <div className="flex flex-col items-start mt-12 pl-28">
-                            <div className="text-left text-4xl text-blue-950">Homey</div>
-                            <div className="text-left text-6xl text-blue-950">Apartments</div>
-                        </div>
-                        <div className="flex flex-wrap justify-center gap-12 px-24 py-4">
-                            {apartmentCards.map((card, index) => (
-                                <RoomCard
-                                    key={index}
-                                    images={card.images}
-                                    title={card.title}
-                                    description={card.description}
-                                    location={card.location}
-                                    priceRange={card.priceRange}
-                                    rating={card.rating}
-                                />
-                            ))}
-                        </div>
-                    </>
-                ) : null}
+                            </div>
+                        )}
+                    </div>
+                </div>
             </div>
-        </>
-    );
-};
+            {selectedCategory === 'All' || selectedCategory === 'Hotels' ? (
+                <>
+                    <div className="flex flex-col items-start pl-6 md:pl-28">
+                        <div className="text-left text-xl text-gray-500">Urban</div>
+                        <div className="text-left text-4xl md:text-6xl text-blue-950">Hotels</div>
+                    </div>
+                    <div className="flex flex-wrap justify-center gap-6 md:gap-12 px-6 md:px-24 py-4">
+                        {hotelCards.map((card, index) => (
+                            <RoomCard
+                                key={index}
+                                images={card.images}
+                                title={card.title}
+                                description={card.description}
+                                location={card.location}
+                                priceRange={card.priceRange}
+                                rating={card.rating}
+                            />
+                        ))}
+                    </div>
+                </>
+            ) : null}
+            {selectedCategory === 'All' || selectedCategory === 'Resorts' ? (
+                <>
+                    <div className="flex flex-col items-start mt-12 pl-6 md:pl-28">
+                        <div className="text-left text-xl text-gray-500">Charming</div>
+                        <div className="text-left text-4xl md:text-6xl text-blue-950">Resorts</div>
+                    </div>
+                    <div className="flex flex-wrap justify-center gap-6 md:gap-12 px-6 md:px-24 py-4">
+                        {resortCards.map((card, index) => (
+                            <RoomCard
+                                key={index}
+                                images={card.images}
+                                title={card.title}
+                                description={card.description}
+                                location={card.location}
+                                priceRange={card.priceRange}
+                                rating={card.rating}
+                            />
+                        ))}
+                    </div>
+                </>
+            ) : null}
+            {selectedCategory === 'All' || selectedCategory === 'Homestay' ? (
+                <>
+                    <div className="flex flex-col items-start mt-12 pl-6 md:pl-28">
+                        <div className="text-left text-xl text-gray-500">Cozy</div>
+                        <div className="text-left text-4xl md:text-6xl text-blue-950">Homestays</div>
+                    </div>
+                    <div className="flex flex-wrap justify-center gap-6 md:gap-12 px-6 md:px-24 py-4">
+                        {homestayCards.map((card, index) => (
+                            <RoomCard
+                                key={index}
+                                images={card.images}
+                                title={card.title}
+                                description={card.description}
+                                location={card.location}
+                                priceRange={card.priceRange}
+                                rating={card.rating}
+                            />
+                        ))}
+                    </div>
+                </>
+            ) : null}
+            {selectedCategory === 'All' || selectedCategory === 'Apartments' ? (
+                <>
+                    <div className="flex flex-col items-start mt-12 pl-6 md:pl-28">
+                        <div className="text-left text-xl text-gray-500">Homey</div>
+                        <div className="text-left text-4xl md:text-6xl text-blue-950">Apartments</div>
+                    </div>
+                    <div className="flex flex-wrap justify-center gap-6 md:gap-12 px-6 md:px-24 py-4">
+                        {apartmentCards.map((card, index) => (
+                            <RoomCard
+                                key={index}
+                                images={card.images}
+                                title={card.title}
+                                description={card.description}
+                                location={card.location}
+                                priceRange={card.priceRange}
+                                rating={card.rating}
+                            />
+                        ))}
+                    </div>
+                </>
+            ) : null}
+        </div>
+    </>
+);
+
+}
 
 export default Accommodations;

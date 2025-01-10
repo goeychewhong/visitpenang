@@ -5,21 +5,24 @@ html {
   opacity: 0;
   transform: scale(0.9);
 }
+
 .fade-enter-active {
   opacity: 1;
   transform: scale(1);
   transition: opacity 300ms, transform 300ms;
 }
+
 .fade-exit {
   opacity: 1;
   transform: scale(1);
 }
+
 .fade-exit-active {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
 }
-/* TouristPage.css */
+
 .tourist-spot-page {
   padding: 20px;
   min-height: 100vh;
@@ -71,11 +74,11 @@ html {
 }
 
 .scroll-button.left {
-  left: 10px;
+  left: 20px;
 }
 
 .scroll-button.right {
-  right: 10px;
+  right: 20px;
 }
 
 .scaled-image {
@@ -209,6 +212,10 @@ html {
 
 .bg-orange-500 {
   background-color: #D8F0FA;
+}
+
+.bg-fbf4e2 {
+  background-color: #fbf4e2;
 }
 
 .hover\:bg-red-500:hover {
@@ -420,6 +427,7 @@ html {
   border: 2px solid #ff9800;
   color: #ff9800;
   text-shadow: 0 0 10px rgba(255, 152, 0, 0.8);
+  border-radius: 50%;
 }
 
 .icon:active {
@@ -431,13 +439,13 @@ html {
 #root {
   margin: 0 auto;
   text-align: center;
-  font-family: "Aclonica", serif;
+  font-family: "Roboto", serif;
   font-weight: 400;
   font-style: normal;
 }
 
 body {
-  background-color: #FBFAF5;
+  background-color: #fff;
   margin: 0;
   padding: 0;
   color: #333333; /* Dark gray text */
@@ -496,44 +504,56 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: linear-gradient(90deg, #D8F0FA, #FBF4E2);
+  background-color: rgba(255, 255, 255, 0.5); 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: absolute;
+  position: fixed; 
   width: 100%;
   top: 0;
   z-index: 20;
 }
 
 .title {
-  font-size: 28px;
-  font-weight: bold;
-  padding: 20px 0 0 20px;
-  color: #fff;
+  font-size: 24px;
+  font-family: "Aclonica", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.icon-container {
+  position: relative;
+}
+
+.icon-container:hover .title {
+  opacity: 1;
+}
+
+.title.visible {
+  opacity: 1;
 }
 
 .nav {
   display: flex;
   gap: 20px;
   padding: 20px 0 0 20px;
-  justify-content: flex-end; /* Align to the right */
+  justify-content: flex-end;
   flex: 1;
 }
 
 .nav a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
-  /* background: linear-gradient(90deg, #ff7e5f, #feb47b); */
-  color: #fff;
 }
 
 .nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #000000;
   color: #fff;
-  /* background: linear-gradient(90deg, #feb47b, #ff7e5f); */
 }
 
 .nav a.active {
@@ -672,6 +692,7 @@ body {
   .icon {
     width: 40px;
     height: 40px;
+    transition: transform 0.2s, box-shadow 0.3s, border 0.3s, color 0.3s, border-radius 0.3s;
   }
 
   .text-4xl {
