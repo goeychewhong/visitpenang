@@ -1,78 +1,134 @@
-import { useEffect, useState } from 'react';
-import ProjectIcon from './assets/Home/ProjectIcon.svg';
-import { BrowserRouter as Router, useLocation } from 'react-router-dom';
+import React from "react";
+import {
+  Navbar,
+  MobileNav,
+  Typography,
+  IconButton,
+} from "@material-tailwind/react";
 import HomePage from './pages/HomePage';
 import './styles/styles.css';
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
+export function StickyNavbar() {
+  const [openNav, setOpenNav] = React.useState(false);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+  React.useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 960 && setOpenNav(false)
+    );
+  }, []);
 
-  return null;
+  const navList = (
+    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal nav-link"
+      >
+        <a href="#home" className="flex items-center text-black">
+          Home
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal nav-link"
+      >
+        <a href="#food-and-beverages" className="flex items-center text-black">
+          Food and Beverages
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal nav-link"
+      >
+        <a href="#accommodations" className="flex items-center text-black">
+          Accommodations
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal nav-link"
+      >
+        <a href="#tourist-spots" className="flex items-center text-black">
+          Tourist
+        </a>
+      </Typography>
+    </ul>
+  );
+
+  return (
+    <Navbar className="fixed top-0 z-20 w-full bg-transparent backdrop-blur-md">
+      <div className="flex items-center justify-between text-blue-gray-900 w-full">
+        <Typography
+          as="a"
+          href="#"
+          className="ml-4 cursor-pointer py-1.5 font-black text-black flex items-center"
+          style={{ fontFamily: 'Aclonica, sans-serif', fontSize: '2rem' }}
+        >
+          Visit Penang
+        </Typography>
+        <div className="flex items-center gap-4 ml-auto">
+          <IconButton
+            variant="text"
+            className="h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden mr-4"
+            ripple={false}
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                className="h-6 w-6"
+                viewBox="0 0 24 24"
+                stroke="black"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                stroke="black"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </IconButton>
+          <div className="mr-4 hidden lg:block">{navList}</div>
+        </div>
+      </div>
+      <MobileNav open={openNav}>
+        {navList}
+      </MobileNav>
+    </Navbar>
+  );
 }
 
 function App() {
-  const [isTitleVisible, setIsTitleVisible] = useState(false);
-
-  const handleIconClick = () => {
-    setIsTitleVisible(prevState => !prevState);
-  };
-
   return (
     <div>
-      <ScrollToTop />
-      <div className="header">
-        <div className="icon-container flex items-center justify-center" onClick={handleIconClick}>
-          <img src={ProjectIcon} alt="Project Icon" className="w-20 h-20 mr-2" />
-          <h1 className={`title text-4xl ${isTitleVisible ? 'visible' : ''}`}>VISIT PENANG</h1>
-        </div>
-        <nav className="nav text-l">
-          <a href="#home" className="text-2xl text-gray-900">Home</a>
-          <a href="#food-and-beverages" className="text-2xl text-gray-900">Food and Beverages</a>
-          <a href="#accommodations" className="text-2xl text-gray-900">Accommodations</a>
-          <a href="#tourist-spots" className="text-2xl text-gray-900">Tourist</a>
-        </nav>
-      </div>
+      <StickyNavbar />
       <HomePage />
-      <footer className="footer bg-FBF4E2">
-        <div className="footer-content">
-          <div className="footer-description">
-            <h2 className="footer-title text-gray-900">About Visit Penang</h2>
-            <p className="footer-text text-gray-700">
-              Visit Penang is your ultimate guide to exploring the beautiful island of Penang. Discover the best tourist spots, food and beverages, and accommodations to make your trip unforgettable.
-            </p>
-          </div>
-          <div className="footer-links">
-            <h2 className="footer-title text-gray-900">Quick Links</h2>
-            <nav className="footer-nav">
-              <a href="#home" className="text-gray-900">Home</a>
-              <a href="#tourist-spots" className="text-gray-900">Tourist</a>
-              <a href="#food-and-beverages" className="text-gray-900">Food and Beverages</a>
-              <a href="#accommodations" className="text-gray-900">Accommodations</a>
-            </nav>
-          </div>
-          <div className="footer-contact">
-            <h2 className="footer-title text-gray-900">Contact Us</h2>
-            <p className="footer-text text-gray-700">Email: goeychewhong2003@gmail.com</p>
-            <p className="footer-text text-gray-700">Phone: +60 124609110</p>
-            <p className="footer-text text-gray-700">Address: Penang, Malaysia</p>
-          </div>
-        </div>
-        <div className="footer-bottom"></div>
-      </footer>
     </div>
   );
 }
 
-function AppWrapper() {
-  return (
-    <Router>
-      <App />
-    </Router>
-  );
-}
-
-export default AppWrapper;
+export default App;

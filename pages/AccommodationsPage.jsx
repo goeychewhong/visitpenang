@@ -180,7 +180,7 @@ const Accommodations = () => {
         },
         {
             category: 'Resorts',
-            title: 'Shangri-La Golden Sands Resort',
+            title: 'Shangri-La Golden Resort',
             description: 'A luxurious resort with the amenities you need for a comfortable stay.',
             images: [Shang1, Shang2, Shang3, Shang4, Shang5],
             location: 'Batu Ferringhi',

@@ -561,12 +561,48 @@ body {
   color: #fff;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .nav a {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.875rem; /* Smaller text size for small and medium screens */
+  }
+
+  .title {
+    display: none; /* Hide the title on small and medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav a {
+    font-size: 0.75rem; /* Even smaller text size for very small screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .title {
+    display: block; /* Show the title on large screens and above */
+  }
+}
+
 .footer {
   background: linear-gradient(90deg, #FBF4E2, #D8F0FA);
   color: #fff;
   padding: 40px 20px;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
 }
 
 .footer-content {
@@ -738,3 +774,50 @@ body {
   box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
   width: 100%; /* Ensure it takes the full width of its container */
 }
+
+.carousel-button {
+  position: absolute;
+  background-color: #4a4a4a;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, opacity 0.3s;
+  z-index: 10; /* Ensure buttons are above overlay */
+  opacity: 0; /* Initially invisible */
+}
+
+.carousel:hover .carousel-button {
+  opacity: 1; /* Visible on hover */
+}
+
+.carousel-button:hover {
+  background-color: #4a4a4a;
+}
+
+.carousel-item {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-item.opacity-100 {
+  opacity: 1;
+}
+
+.navbar {
+  background-color: #fff; /* Slightly transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-link a {
+  font-size: 1.25rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link a:hover {
+  background-color: black;
+  color: white;
+}
+

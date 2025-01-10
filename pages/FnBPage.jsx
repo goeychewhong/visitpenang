@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/styles.css";
 import "../styles/foodcard.css"; // Import the FoodCard CSS
+import { useInView } from 'react-intersection-observer';
 import bannerVideo from "../assets/Fnb/banner.mp4"; // Import the banner video
 import FoodCard from "../components/FoodCard";
 import foodImage1 from "../assets/Fnb/food1.jpg";
@@ -180,7 +181,7 @@ function FnBPage() {
           <source src={bannerVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="section bg-FBF4E2 p-4 rounded-lg shadow-2xl text-left">
+        <div className="section p-4 rounded-lg shadow-2xl text-left">
           <h2 className="text-3xl font-bold mb-2 pt-6 pl-6 text-gray-900">
             Foods
           </h2>
