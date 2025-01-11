@@ -46,9 +46,9 @@ import Aayu3 from '../assets/Accommodations/Resorts/Aayu Stewart Resort/Ayu3.jpg
 import Aayu4 from '../assets/Accommodations/Resorts/Aayu Stewart Resort/Ayu4.jpg';
 import Aayu5 from '../assets/Accommodations/Resorts/Aayu Stewart Resort/Ayu5.jpg';
 // Bayview Beach Resort
-import Bayview1 from '../assets/Accommodations/Resorts/Bayview Beach Resort/Bayview1.Webp';
-import Bayview2 from '../assets/Accommodations/Resorts/Bayview Beach Resort/Bayview2.Webp';
-import Bayview3 from '../assets/Accommodations/Resorts/Bayview Beach Resort/Bayview3.Webp';
+import Bayview1 from '../assets/Accommodations/Resorts/Bayview Beach Resort/Bayview1.webp';
+import Bayview2 from '../assets/Accommodations/Resorts/Bayview Beach Resort/Bayview2.webp';
+import Bayview3 from '../assets/Accommodations/Resorts/Bayview Beach Resort/Bayview3.webp';
 import Bayview4 from '../assets/Accommodations/Resorts/Bayview Beach Resort/Bayview4.webp';
 import Bayview5 from '../assets/Accommodations/Resorts/Bayview Beach Resort/Bayview5.jpg';
 //DoubleTree Resort by Hilton Hotel Penang
