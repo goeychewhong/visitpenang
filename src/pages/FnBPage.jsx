@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/styles.css";
-import "../styles/foodcard.css"; // Import the FoodCard CSS
+import "../styles/FoodCard.css"; // Import the FoodCard CSS
 import { useInView } from 'react-intersection-observer';
 import bannerVideo from "../assets/Fnb/banner.mp4"; // Import the banner video
 import FoodCard from "../components/FoodCard";
