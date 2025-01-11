@@ -64,10 +64,10 @@ import JBe3 from '../assets/Accommodations/Resorts/J Beach Suites At Paradise Ra
 import JBe4 from '../assets/Accommodations/Resorts/J Beach Suites At Paradise Rainbow Beach Resort/JBe4.jpg';
 import JBe5 from '../assets/Accommodations/Resorts/J Beach Suites At Paradise Rainbow Beach Resort/JBe5.jpg';
 //PARKROYAL Penang Resort
-import Park1 from '../assets/Accommodations/Resorts/Parkroyal Penang Resort/Park1.webp';
-import Park2 from '../assets/Accommodations/Resorts/Parkroyal Penang Resort/Park2.webp';
-import Park3 from '../assets/Accommodations/Resorts/Parkroyal Penang Resort/Park3.jpg';
-import Park4 from '../assets/Accommodations/Resorts/Parkroyal Penang Resort/Park4.webp';
+import Park1 from '../assets/Accommodations/Resorts/PARKROYAL Penang Resort/Park1.webp';
+import Park2 from '../assets/Accommodations/Resorts/PARKROYAL Penang Resort/Park2.webp';
+import Park3 from '../assets/Accommodations/Resorts/PARKROYAL Penang Resort/Park3.jpg';
+import Park4 from '../assets/Accommodations/Resorts/PARKROYAL Penang Resort/Park4.webp';
 
 //Homestays Images Import
 //Surprised Homestay Butterworth
