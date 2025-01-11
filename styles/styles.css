@@ -821,3 +821,68 @@ body {
   color: white;
 }
 
+.footer {
+  background-color: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #333333; /* Dark gray text */
+  padding: 40px 20px;
+  margin-top: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-info {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-info p {
+  margin: 10px 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  text-align: right;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #000000; /* Dark gray text */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #666666; /* Dark gray text */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #666;
+  padding-top: 20px;
+  width: 400%; /* Make the line longer */
+}
+
+.footer-bottom-text {
+  color: #bbb;
+  font-size: 14px;
+  text-align: center; /* Center the text */
+}
