@@ -8,8 +8,7 @@ import accomodationicon from '../assets/Home/accomodation.svg';
 import FnBPage from './FnBPage';
 import AccommodationsPage from './AccommodationsPage';
 import TouristSpotsPage from './TouristPage';
-import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
+import { Fade, Slide } from "react-awesome-reveal";
 import { useInView } from 'react-intersection-observer';
 
 function HomePage() {
