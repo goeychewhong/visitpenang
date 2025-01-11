@@ -26,7 +26,7 @@ const TouristCard = ({ image, title, description, link, carouselImages }) => {
 
   return (
     <div className={`card-container ${isFlipped ? "flipped" : ""}`}>
-      <div className="card card-side bg-base-100 shadow-xl very-big-card front">
+      <div className="card card-side bg-white-100 shadow-xl very-big-card front">
         <figure className="very-big-figure" onClick={handleFlip}>
           <img src={image} alt={title} className="object-cover w-full h-full no-border-radius" />
         </figure>
